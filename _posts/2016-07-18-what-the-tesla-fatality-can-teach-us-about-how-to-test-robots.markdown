@@ -51,7 +51,11 @@ The Model S is also equipped with low-pointing, front facing [ultrasonic sensors
 
 For now, let us accept a technological event horizon as a given: cars will not have *perfect* truck spotting abilities in the next 5-10 years. (The reason why is academically interesting, but beyond the scope of this post.) As such, we should narrow our question down. Instead of asking "How can we make perfect truck spotting technology?", we can ask a related, slightly more solveable question: "How should we *evaluate the safety risk* of the automated truck spotting abilities we have?"  
 
-One way to do this is *in aggregate*. Naively, if an Autopilot Model S is safer than a human-driven Model S, than any failures in the Autopilot system, even if they cause fatalities, might be acceptable. [This is ethically questionable](http://spectrum.ieee.org/cars-that-think/transportation/self-driving/tesla-autopilot-crash-why-we-should-worry-about-a-single-death). 
+One way to do this is to just measure outputs. Naively, if an Autopilot Model S is proven safer than a human-driven Model S, than any failures in the Autopilot system, even if they cause fatalities, might be acceptable to some. [This is highly ethically questionable](http://spectrum.ieee.org/cars-that-think/transportation/self-driving/tesla-autopilot-crash-why-we-should-worry-about-a-single-death).  Only measuring outputs presents a practical problem as well: if it turns out that semi-autonomous cars are very dangerous, we have let them onto the road before they were ready and caused completely avoidable deaths in an irresponsible experiment. 
+
+
+
+
 
 
 
