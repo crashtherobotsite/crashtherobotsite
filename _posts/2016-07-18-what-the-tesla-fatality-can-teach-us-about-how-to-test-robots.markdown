@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "What the Tesla Autopilot Fatality Can Teach Us About Testing Robots"
+title:  "Using the Tesla Autopilot Fatality to Illustrate Robotic System Safety"
 date:   2016-07-18 21:10:58 -0400
 categories: tesla robots self-driving-cars autonomy testing government-policy
 author: AMB
 ---
-
+*TL;DR: We propose interdisciplinary tools and strategies from other industries that could be used to investigate the first fatality while using a semi-autonomous vehicle and prevent future accidents of robotics. These tools include the idea of "Reasonably foreseeable misuse" from the medical device industry, truck side guards endorsed by bicycling safety groups, and FTA tools used in modern risk assessment engineering.*
 
 On May 7 2016, a motorist named Joshua Brown became the first traffic fatality in an incident involving the Tesla Model S "Autopilot" feature. While not a true autopilot, Tesla touted the ambitiously-named feature as a landmark step towards self-driving cars.  By accounts presently available from Tesla, the system did not explicitly malfunction during the accident. At time of writing, this accident is not a case of broken equipment, dead batteries, or backed-out screws. Instead, the Tesla Model S Autopilot system failed to live up to the expectations of the driver, prompting new questions about how to best design technology to work with the humans we want the technology to keep safe. 
 
@@ -20,7 +20,7 @@ How did this crash happen? We do not have full technical details yet. Tesla subm
 The incident is a system failure that demonstrates many of the challenges facing today's state-of-the-art robotics systems. Without assigning legal blame (because for a safe system, all the problems will have to be solved regardless of which one, if any, caused this accident),  we can break this down into different kinds of failures, each with different solutions:  
 
  
-A. Expectation failure,  "Use Error" and "Reasonably Foreseeable Misuse". 
+## A. "Use Error" and "Reasonably Foreseeable Misuse" ## 
 
 We can define *expectation failure* here as the failure of Tesla the company, and of the Model S during operation, to adequately convey Autopilot's limitations to the driver.  Alternately, if we were lawyers for Tesla, we could call this the failure of the driver to comprehend Autopilot's limitations. Tesla's announcement of the fatality emphasizes the numerous warnings that the Model S displays about how Autopilot is in beta and should not be used as a replacement for safe and attentive driving.  The relatives of the deceased may or may not agree. Though responsibility has very real consequences, the practical problem from a system point of view is actually *the same* regardless of responsibility: *the driver did not pay close enough attention to the road in front of him to avoid an accident* AND *the Autopilot system did not avoid an accident.*
 
@@ -33,7 +33,7 @@ We can start with a toy example. Let us say that RobotCrashers Inc. (an entirely
 Not all cases are clear cut, which is where a regulatory mandate for a written decision process comes in. In Tesla's case, naming a feature 'Autopilot' and then blaming a driver when they treat the feature as if it is an autopilot might be considered reasonably foreseeable. [Consumer Reports certainly thinks so.](www.consumerreports.org/tesla/tesla-autopilot-too-much-autonomy-too-soon/). Regulation alone can't settle the argument, but the MDD is a mandate that says that all medical devices manufacturers have to show their work. A company under this regulation must write down its decision making process on possible dangers *before they use it,* like defining pass/fail criteria for a test before you run it. The manufacturer has to consider all the options, make a list of foreseeable problems, and write down its decisions about whether or not to fix those problems. This kind of framework could be ported directly from self-driving wheelchairs to consumer robotics with no changes at all. 
 
  
-B. Car and Real-Life Highway Safety as a System Failure 
+## B. Highway Safety as a System Failure ##
 
 A robot system can be modeled to include its environment, in this case the American public road system.  Tesla argues in its annoucement of the accident that a Tesla is still safer than your average car on the road. They quote the [US DOT statistic](https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/812246) and point out that the fatality rate for all cars on the road in America is 1.07 deaths for every 100 million miles driven. The highway system isn't perfectly safe for humans or robots at present. Given this fatality rate, we can look at the highways and environment as *part* of the problem that needs to be solved for humans to coexist with  self-driving cars (and other autonomous robots in the future).
 
@@ -43,21 +43,28 @@ This crash might have been avoided if the road or the truck had more safeguards.
 
 Robotics can give something quite valuable back to other disciplines to further efforts to make our environment safer: simulation and telemetry. Robotic cars record far more crash data than a normal car. This kind of data has the ability to dramatically shape policy about speed limits, road signs, and other observed variables if we can process it. Perhaps roads of the future, once more exact data is collected, will be able to be designed to avoid or prevent left turns for large trucks. 
 
-C. Robot Limitations and Computer Vision Failures
-
-Despite limited information, the failure of the Model S to "see" a tractor trailer in front of it has been the subject of much scrutiny. A bright tractor trailer against a bright sky is a polar bear in a white-out snow storm, poorly visible to the human eye as well as robotic cameras. But a human paying attention (so the logic goes) should still be able to differentiate a truck from the sky because we learn to associate the other parts of the truck that we can see with things that our brain identifies as trucks. Computer vision technology has not reached this point as of 2016.
+## C. FTA for Identifying Root Causes ##
+ 
+Despite limited information in the report, the failure of the Model S to "see" a tractor trailer has been the subject of much scrutiny. A bright tractor trailer against a bright sky is a polar bear in a white-out snow storm, poorly visible to the human eye as well as robotic cameras. A human paying attention (so the logic goes) should still be able to differentiate a truck from the sky because we learn to associate the other parts of the truck that we can see with things that our brain identifies as trucks. Computer vision technology has not reached this point as of 2016.
 
 The Model S is also equipped with low-pointing, front facing [ultrasonic sensors](https://forums.teslamotors.com/forum/forums/model-s-will-be-able-autosteer-will-require-more-sensors-semiautonomous-driving) that could not detect a potential collision because they pointed underneath the tractor trailer.  According to Elon Musk, this is because pointing the sensors higher [presents false positives when bouncing off highway signs](https://twitter.com/elonmusk/status/748625979271045121). The specs available from the Model S website also only give the sensors a range of 16 feet, hardly useful travelling at highway speeds. 
 
-For now, let us accept a technological event horizon as a given: cars will not have *perfect* truck spotting abilities in the next 5-10 years. (The reason why is academically interesting, but beyond the scope of this post.) As such, we should narrow our question down. Instead of asking "How can we make perfect truck spotting technology?", we can ask a related, slightly more solveable question: "How should we *evaluate the safety risk* of the automated truck spotting abilities we have?"  
+Between the camera, the range finder, and the software running on top of them, the Model S was still not able to detect a potential crash. The corner case slipped through the imperfect truck spotting algorithm.  We could ask the question "How can we perfect truck spotting so this doesn't happen again?" However, for now, I propose that the reader accept a technological event horizon as a given: cars will not have *perfect* truck spotting abilities in the next 5-10 years. (The reason why is academically interesting, but beyond the scope of this post.)  I propose to narrow our question down. Instead of asking "How can we make perfect truck spotting technology?", we can ask a related, slightly more solveable question: "How should we evaluate the safety risks of such technology?"  
 
-One way to do this is to just measure outputs. Naively, if an Autopilot Model S is proven safer than a human-driven Model S, than any failures in the Autopilot system, even if they cause fatalities, might be acceptable to some. [This is highly ethically questionable](http://spectrum.ieee.org/cars-that-think/transportation/self-driving/tesla-autopilot-crash-why-we-should-worry-about-a-single-death).  Only measuring outputs presents a practical problem as well: if it turns out that semi-autonomous cars are very dangerous, we have let them onto the road before they were ready and caused completely avoidable deaths in an irresponsible experiment. 
+Instead of trying to brainstorm every *corner case* that the world can throw at our autonomous robot, we can use already developed tools to limit the number of cases we need to test. The [Fault Tree Analysis (FTA)](https://www.hq.nasa.gov/office/codeq/risk/docs/ftacourse.pdf) is one such tool. The process is a modern descendant of a process invented by NASA in used to make the moon landing successfully. FTA involves working backwards from problems to build a probability tree of possible ways to acheive that problem. Probability information comes from real world metrics or manufacturing data about known failures.  In our truck spotting example, this narrows the possibilites from the gigantic "How many real world trucks and orientations will we fail to spot?" question to the a manageable starter question: "How can a car crash cause a fatality?". The remainder of the process involves brainstorming and working backwards through all the ways that problem could happen.
 
+An example branch of our fault tree for this accident might look like this (parentheses show example tree branch out points):
+	How can a car crash cause a fatality?  (Front airbags fail, Front airbags damaged, Front airbags not triggered, Front airbags not sufficient, car crashes at unusual angle, crash exacerbates unknown medical condition....)
+	How do the front airbags get damaged? (Crash damages airbags, Pre-crash damage, sabotage, expired life, coffee poured on controller....)
+	How could a car crash damage air bags? (Roof comes off car, water explodes car, glass punctures airbags...)
+	How could the roof come off the car? (Car hits ledge of underpass or truck or bridge, bad manufacturing, bad convertible latches...)
+	How can car hit bottom ledge of obstacle? (Autopilot system fails to detect ledge, drive fails to see ledge, falling object....)
+	How did driver fail to see ledge? (Driver was asleep, Driver was relying on Autopilot, ...)
 
+An FTA involves very real engineering work and forces a deep understanding of a robotic system. However, it workds at a *system* level and narrows the focus to parts that can cause problems rather than normal operation. The FTA tool is ideal for getting traction on hypothetical problems that are hard to discover by looking at a schematic or source code of a complex machine like a self-driving car. 
 
+FTA processes are "baked in" to many modern automotive standards, so its very likely that Tesla has performed one or many already, at many different levels of detail. Faced with new information from this accident, they will have to go back to their FTA and add branches, or change the likelihood of some of the branches to reflect their new knowledge.  Regardless of the state of the truck spotting technology, the FTA functions as a tool that will help keep this problem from happening again to other drivers. 
 
+## Conclusion ##
 
-
-
-
-
+As self-driving cars and other high-technology robotics and AI enters a brave new world of consumer products, it's important to remember that not everything about the world is new and special and different. Even though these products are new, older tools used for keeping people safe through environmental modification, sensible policy, and best engineering practices still apply. Robots are inherently intelligent, interdisciplinary machines, and the field of robotics should steal the smartest ideas from as many disciplines as it can. 
