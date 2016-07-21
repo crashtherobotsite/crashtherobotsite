@@ -13,9 +13,9 @@ The problem is not hopeless.  It is true that the failure of technology to live 
 
 How did this crash happen? We do not have full technical details yet. Tesla submitted crash report details to the U.S. National Highway Traffic Safety Administration (https://www.teslamotors.com/blog/tragic-loss), which is still in the process of investigating the crash at the time of writing.  The main available facts at present are: 
 
-	1. A high-riding, white tractor trailer pulled across the highway perpendicular to the Model S. The Tesla Model S drove or slid completely underneath the trailer, shearing off the roof of the Model S. The Model S continued moving after it came out the other side of the trailer, veered off the highway, and crashed into a fence post. (http://electrek.co/2016/07/01/understanding-fatal-tesla-accident-autopilot-nhtsa-probe/)
+1. A high-riding, white tractor trailer pulled across the highway perpendicular to the Model S. The Tesla Model S drove or slid completely underneath the trailer, shearing off the roof of the Model S. The Model S continued moving after it came out the other side of the trailer, veered off the highway, and crashed into a fence post. (http://electrek.co/2016/07/01/understanding-fatal-tesla-accident-autopilot-nhtsa-probe/)
 	
-	2. Tesla's "Autopilot" was active, but the Model S' ultrasonic sensors and camera-based visual detection system did not detect the white tractor trailer against a bright sky in time to stop the car. Neither did the driver.
+2. Tesla's "Autopilot" was active, but the Model S' ultrasonic sensors and camera-based visual detection system did not detect the white tractor trailer against a bright sky in time to stop the car. Neither did the driver.
 	
 The incident is a system failure that demonstrates many of the challenges facing today's state-of-the-art robotics systems. Without assigning legal blame (because for a safe system, all the problems will have to be solved regardless of which one, if any, caused this accident),  we can break this down into different kinds of failures, each with different solutions:  
 
