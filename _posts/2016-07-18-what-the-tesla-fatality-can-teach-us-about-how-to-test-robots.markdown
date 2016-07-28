@@ -20,7 +20,7 @@ How did this crash happen? We do not have full technical details yet. Tesla subm
 The incident is a system failure that demonstrates many of the challenges facing today's state-of-the-art robotics systems. Without assigning legal blame (because for a safe system, all the problems will have to be solved regardless of which one, if any, caused this accident),  we can break this down into different kinds of failures, each with different solutions:  
 
  
-## A. "Use Error" and "Reasonably Foreseeable Misuse" ## 
+## A. "Use Error" and "Reasonably Foreseeable Misuse"
 
 We can define *expectation failure* here as the failure of Tesla the company, and of the Model S during operation, to adequately convey Autopilot's limitations to the driver.  Alternately, if we were lawyers for Tesla, we could call this the failure of the driver to comprehend Autopilot's limitations. Tesla's announcement of the fatality emphasizes the numerous warnings that the Model S displays about how Autopilot is in beta and should not be used as a replacement for safe and attentive driving.  The relatives of the deceased may or may not agree. Though responsibility has very real consequences, the practical problem from a system point of view is actually *the same* regardless of responsibility: *the driver did not pay close enough attention to the road in front of him to avoid an accident* AND *the Autopilot system did not avoid an accident.*
 
