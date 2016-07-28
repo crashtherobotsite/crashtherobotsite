@@ -18,6 +18,7 @@ github_username:  crashtherobotsite
 
 # Build settings
 markdown: kramdown
+exclude: [vendor]
 
 #https://github.com/jekyll/jekyll-sitemap
 #Plugin to build Google- search engine happy sitemap. 
