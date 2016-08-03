@@ -30,7 +30,9 @@ The Part 107 summary states that while a drone can fly autonomously, a pilot mus
     * ...have the necessary Part 107 license to fly an autonomous UAV,
     * ...and finally, *follow all the other safety rules in Part 107.*
  
-While these rules prevent truly economical use of autonomous drones, the FAA is practically begging companies to prove that the rules are too stringent. In an effort to curtail any criticism of holding back technological progress, the FAA has made it clear that all of Part 107 rules can be exempted with a special waiver process that will be available through an online portal by the end of 2016. If you've got the latest and greatest self-flying tech but it's over 55lbs or you want to use it for night-time flying, you are welcome to show it off to the FAA and get a special permit under Section 333 like [Amazon or all of these companies](https://www.faa.gov/uas/getting_started/fly_for_work_business/beyond_the_basics/section_333/333_authorizations/).  
+While these rules prevent truly economical use of autonomous drones, the FAA is practically begging companies to prove that the rules are too stringent. In an effort to curtail any criticism of holding back technological progress, the FAA has made it clear that all of Part 107 rules can be exempted with a special waiver process that will be available through an online portal by the end of 2016. If you've got the latest and greatest self-flying tech but it's over 55lbs or you want to use it for night-time flying, you are welcome to show it off to the FAA and get a special permit under Section 333 like [Amazon or all of these companies](https://www.faa.gov/uas/getting_started/fly_for_work_business/beyond_the_basics/section_333/333_authorizations/):  
+
+*"Most of the restrictions discussed above are waivable if the applicant demonstrates that his or her operation can safely be conducted under the terms of a certificate of waiver."*
 
 In other words, the U.S. Government wants YOU to improve drone technology... so let's see how a  state-of-the-art autonomous drone might be made to follow the new safety rules. 
 
@@ -42,13 +44,14 @@ The Part 107 rules that apply to piloted and autonomous drones provide a nice wi
 
 *Hard* rules will require either very conservative drones or some serious engineering work. 
 
-*Outlawed* rules cover activities forbidden to human pilots that a robot might be able to do very well and safely, like flying at night. 
+*Outlawed* rules cover activities forbidden to human pilots that a robot might be able to do very well and safely, like flying fast or at night.  These items are presently forbidden because no drones have proven the ability to do tasks like this safely and repeatably. 
 
 *Contradictory* rules are too ambiguous for present AI to handle. This may include rules that even a human is going to have a hard time following. Rather than technological improvements, the *law* is what would have to be clarified rather than the AI.  
 
 *Impossible* rules are physically impossible or cannot be followed safely. These are rules that humans will break in a time of emergency (like ignoring traffic lights when your brakes have gone out) or when it is safer to break the rule than to follow it (like driving under the speed limit on the Jersey Turnpike around New York City, which puts your car going 30MPH slower than the cars around it).
 
 ## The EASY: Autonomous Drones in 2016 ##
+
 
 ## The HARD: Autonomous Drones in 2026 ##
 
