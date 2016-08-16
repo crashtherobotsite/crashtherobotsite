@@ -23,4 +23,9 @@ Build and run the web site. It will autoregenerate automatically.
 bundle exec jekyll serve
 ```
 
+### Installing locally on Mac
+
+Follow the [GitHub pages instructions][2] for downloading the repository and installing Jekyll locally.
+
 [1]: http://www.crashtherobot.com/ 
+[2]: https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/
