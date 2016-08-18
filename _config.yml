@@ -12,6 +12,7 @@ description: > # this means to ignore newlines until "baseurl:"
  CrashTheRobot.com explores possible solutions to today's safety and security problems in robotics, AI, drones and related fields. Also, we crash robots. 
 
 baseurl: "" # the subpath of your site, e.g. /blog
+imgurl: ""
 url: "http://crashtherobot.com" # the base hostname & protocol for your site
 twitter_username: 
 github_username:  crashtherobotsite
