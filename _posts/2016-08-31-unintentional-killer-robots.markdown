@@ -35,9 +35,21 @@ The fallout from the Therac-25 radiation disaster caused the FDA to issue the fi
 
 Surgery robots were linked to [144 deaths between 2000 and 2013](http://arxiv.org/ftp/arxiv/papers/1507/1507.03518.pdf) according to a recent paper. The authors of the study raise a growing concern in the medical world: *Are robots really safer surgeons, or is the human desire for a shiny new toy and a more billable surgery procedure actually making people less safe?* 
 
-While it is not completely fair to single out Intuitive Surgical's da Vinci system for all of those deaths, the daVinci system is a household name that deserves the singling out: doctors are worried that "
-The 
+While it is not completely fair to single out Intuitive Surgical's da Vinci system for all of those deaths, the daVinci system is a marketing-juggernaut household name that deserves the singling out. In fact, [medical researchers worry](http://jama.jamanetwork.com/article.aspx?articleid=1700496)  that:  
 
-http://www.acog.org/About-ACOG/News-Room/News-Releases/2013/Statement-on-Robotic-Surgery
+*"Aggressive direct-to-consumer marketing and incentives associated with fee-for-service payment may promote the use of these advanced treatment technologies."*
 
-http://www.medicaldaily.com/144-deaths-linked-robotic-surgery-past-14-years-are-they-safer-or-more-effective-344462
+At least [one group of doctors](http://www.acog.org/About-ACOG/News-Room/News-Releases/2013/Statement-on-Robotic-Surgery) is very disappointed in the effects that marketing robots directly to patients could have on their health as well: 
+
+*"Aggressive direct-to-consumer marketing of the latest medical technologies may mislead the public into believing that they are the best choice."*
+
+The expectations set for these robots are that they can perform better than human surgeons, or with less skilled operators behind the controls, and that has not proven conclusively true so far.  While the jury is still out, blanket trust in robot surgeons should not be part of any techno-futurist's arsenal. 
+
+
+
+
+
+
+
+
+
