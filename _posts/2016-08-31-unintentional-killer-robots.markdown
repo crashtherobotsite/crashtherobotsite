@@ -1,137 +1,263 @@
+Welcome to StackEdit!
+===================
 
----
-layout: post
-title:  "10 Unintentional Killer Robots"
-date:   2016-08-31 18:14:00 -0400
-categories: ai safety fatalities da-vinci
-author: AMB
----
-*TL;DR: 10 unintentionally fatal robots from the 1980s through today provide a glimpse of the safety challenges that all engineers face, but also highlight safety challenges unique to AI and robots. All engineers have to worry about broken components, material wear, human interactions, realistic testing, and potential product misuse. Roboticists have to worry about additional factors such as invisibile complexity, unproveable safety factors, expectations based on Hollywood, and others.*
 
+Hey! I'm your first Markdown document in **StackEdit**[^stackedit]. Don't delete me, I'm very helpful! I can be recovered anyway in the **Utils** tab of the <i class="icon-cog"></i> **Settings** dialog.
 
-Killer Robots. The stuff of Hollywood legends, most killer robots are designed that way on purpose- gun turrets, lasers, red LED eyes. Generally, they look like this: 
+----------
 
-<img src="http://vignette2.wikia.nocookie.net/terminator/images/1/19/Terminator_robot.jpg/revision/latest?cb=20090512155233" alt="Fatal Hollywood Robot"  height="200" />
-*T-850, Fatal Hollywood Robot*
 
-Much less entertaining are robots in the real world that kill, not by design, but by accident. As a public service announcement, robots that kill you accidentally look like this:
+Documents
+-------------
 
-![Fatal Real World Robot](https://hci.cs.siue.edu/NSF/Files/Semester/Week13-2/PPT-Text/images/Image3.png)
- *Therac-25, Fatal Real World Robot*
+StackEdit stores your documents in your browser, which means all your documents are automatically saved locally and are accessible **offline!**
 
-This list covers the top 10 most-accidentally-fatal robots of the modern era. To make the list, the fatality had to be due specifically to a "robotic" or "AI" feature. While there is no perfect definition for [what counts as a robot and what doesn't](http://www.crashtherobot.com/toys/robots/science-fiction/roomba/irobot/2016/07/14/your-robot-should-be-cute-and-needy.html), I've used the general definition that if an electro-mechanical device *senses* any part of the physical world,  *makes a decision* based on input data,  and *actuates* the resulting output, then it qualifies as a robot. If it *accidentally kills someone in the process*, it qualifies for our list. 
+> **Note:**
 
-## 1. Therac-25 (1985-1987)
-Topping our list is the Therac-25, one of the most infamous case studies in medical device design gone wrong. The Therac-25 was a multi-mode radiation therapy device designed to treat different kinds of cancer. Its software, reused from an older model, contained  bugs that led to the wrong kind of radiation being applied to patients, causing at least 4 deaths and several additional severe radiation burns. The Therac-25 makes our list for two reasons, one technical and one human. 
+> - StackEdit is accessible offline after the application has been loaded for the first time.
+> - Your local documents are not shared between different browsers or computers.
+> - Clearing your browser's data may **delete all your local documents!** Make sure your documents are synchronized with **Google Drive** or **Dropbox** (check out the [<i class="icon-refresh"></i> Synchronization](#synchronization) section).
 
-Technologically, [one of the root causes](https://en.wikipedia.org/wiki/Therac-25#Root_causes)  of the fatalities was a race condition due to concurrent programming errors: the machine needed a specific amount of time to switch modes when an operator entered a command sequence. In the lab, no operator had ever entered the sequence *fast enough* to cause the error. In a perverse twist of fate, it took several months of real life operation before *experienced technicians* could use the console fast enough to cause the problem.  The second reason the Therac-25 became a classic case study is a combination of human frailty and human arrogance.  Because the Therac-25 treated patients already dying of cancer, and because the company had sent out advertisments for the machine claiming it was 5 orders safer than previously working models, [two people died](http://www.ccnr.org/fatal_dose.html) before anyone even *thought* to blame the software. 
-	
-The fallout from the Therac-25 radiation disaster caused the FDA to issue the first laws [requiring hospitals to report errors with medical devices to the FDA and the manufacturer](https://computingcases.org/case_materials/therac/case_history/Case%20History.html) in an effort to close the information loop when something goes wrong. The idea is that even if a dangerous medical device gets on the market, a single failure should tip everyone in the country off to the danger.  We're smarter now, right? Which brings us to....
+#### <i class="icon-file"></i> Create a document
 
+The document panel is accessible using the <i class="icon-folder-open"></i> button in the navigation bar. You can create a new document by clicking <i class="icon-file"></i> **New document** in the document panel.
 
-##2. The Da Vinci Surgical System (2000-present)
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Cmglee_Cambridge_Science_Festival_2015_da_Vinci.jpg/1280px-Cmglee_Cambridge_Science_Festival_2015_da_Vinci.jpg" alt="Fatal Hollywood Robot"  height="200" />
-*The Da Vinci Surgical System, Potentially Fatal Real-World Robot*
+#### <i class="icon-folder-open"></i> Switch to another document
 
-Surgery robots were linked to [144 deaths between 2000 and 2013](http://arxiv.org/ftp/arxiv/papers/1507/1507.03518.pdf) according to a recent paper. The authors of the study raise a growing concern in the medical world: *Are robots really safer surgeons, or is the human desire for a shiny new toy and a more billable surgery procedure actually making people less safe?* 
+All your local documents are listed in the document panel. You can switch from one to another by clicking a document in the list or you can toggle documents using <kbd>Ctrl+[</kbd> and <kbd>Ctrl+]</kbd>.
 
-While it is not completely fair to single out Intuitive Surgical's da Vinci system for all of those deaths, the daVinci system is a marketing-juggernaut household name that deserves the singling out. In fact, [medical researchers worry](http://jama.jamanetwork.com/article.aspx?articleid=1700496)  that:  
+#### <i class="icon-pencil"></i> Rename a document
 
-*"Aggressive direct-to-consumer marketing and incentives associated with fee-for-service payment may promote the use of these advanced treatment technologies."*
+You can rename the current document by clicking the document title in the navigation bar.
 
-At least [one group of doctors](http://www.acog.org/About-ACOG/News-Room/News-Releases/2013/Statement-on-Robotic-Surgery) is very disappointed in the effects that marketing robots directly to patients could have on their health as well: 
+#### <i class="icon-trash"></i> Delete a document
 
-*"Aggressive direct-to-consumer marketing of the latest medical technologies may mislead the public into believing that they are the best choice."*
+You can delete the current document by clicking <i class="icon-trash"></i> **Delete document** in the document panel.
 
-The expectations set for these robots are that they can perform better than human surgeons, or with less skilled operators behind the controls, and that has not proven conclusively true so far.  While the jury is still out, blanket trust in robot surgeons should not be part of any techno-futurist's arsenal. 
+#### <i class="icon-hdd"></i> Export a document
 
+You can save the current document to a file by clicking <i class="icon-hdd"></i> **Export to disk** from the <i class="icon-provider-stackedit"></i> menu panel.
 
+> **Tip:** Check out the [<i class="icon-upload"></i> Publish a document](#publish-a-document) section for a description of the different output formats.
 
 
+----------
 
 
+Synchronization
+-------------------
 
+StackEdit can be combined with <i class="icon-provider-gdrive"></i> **Google Drive** and <i class="icon-provider-dropbox"></i> **Dropbox** to have your documents saved in the *Cloud*. The synchronization mechanism takes care of uploading your modifications or downloading the latest version of your documents.
 
+> **Note:**
 
+> - Full access to **Google Drive** or **Dropbox** is required to be able to import any document in StackEdit. Permission restrictions can be configured in the settings.
+> - Imported documents are downloaded in your browser and are not transmitted to a server.
+> - If you experience problems saving your documents on Google Drive, check and optionally disable browser extensions, such as Disconnect.
 
----
-layout: post
-title:  "10 Unintentional Killer Robots"
-date:   2016-08-31 18:14:00 -0400
-categories: ai safety fatalities da-vinci
-author: AMB
----
-*TL;DR: 10 unintentionally fatal robots from the 1980s through today provide a glimpse of the safety challenges that all engineers face, but also highlight safety challenges unique to AI and robots. All engineers have to worry about broken components, material wear, human interactions, realistic testing, and potential product misuse. Roboticists have to worry about additional factors such as invisibile complexity, unproveable safety factors, expectations based on Hollywood, and others.*
+#### <i class="icon-refresh"></i> Open a document
 
+You can open a document from <i class="icon-provider-gdrive"></i> **Google Drive** or the <i class="icon-provider-dropbox"></i> **Dropbox** by opening the <i class="icon-refresh"></i> **Synchronize** sub-menu and by clicking **Open from...**. Once opened, any modification in your document will be automatically synchronized with the file in your **Google Drive** / **Dropbox** account.
 
-Killer Robots. The stuff of Hollywood legends, most killer robots are designed that way on purpose- gun turrets, lasers, red LED eyes. Generally, they look like this: 
+#### <i class="icon-refresh"></i> Save a document
 
-<img src="http://vignette2.wikia.nocookie.net/terminator/images/1/19/Terminator_robot.jpg/revision/latest?cb=20090512155233" alt="Fatal Hollywood Robot"  height="200" />
-*T-850, Fatal Hollywood Robot*
+You can save any document by opening the <i class="icon-refresh"></i> **Synchronize** sub-menu and by clicking **Save on...**. Even if your document is already synchronized with **Google Drive** or **Dropbox**, you can export it to a another location. StackEdit can synchronize one document with multiple locations and accounts.
 
-Much less entertaining are robots in the real world that kill, not by design, but by accident. As a public service announcement, robots that kill you accidentally look like this:
+#### <i class="icon-refresh"></i> Synchronize a document
 
-![Fatal Real World Robot](https://hci.cs.siue.edu/NSF/Files/Semester/Week13-2/PPT-Text/images/Image3.png)
- *Therac-25, Fatal Real World Robot*
+Once your document is linked to a <i class="icon-provider-gdrive"></i> **Google Drive** or a <i class="icon-provider-dropbox"></i> **Dropbox** file, StackEdit will periodically (every 3 minutes) synchronize it by downloading/uploading any modification. A merge will be performed if necessary and conflicts will be detected.
 
-This list covers the top 10 most-accidentally-fatal robots of the modern era. To make the list, the fatality had to be due specifically to a "robotic" or "AI" feature. While there is no perfect definition for [what counts as a robot and what doesn't](http://www.crashtherobot.com/toys/robots/science-fiction/roomba/irobot/2016/07/14/your-robot-should-be-cute-and-needy.html), I've used the general definition that if an electro-mechanical device *senses* any part of the physical world,  *makes a decision* based on input data,  and *actuates* the resulting output, then it qualifies as a robot. If it *accidentally kills someone in the process*, it qualifies for our list. 
+If you just have modified your document and you want to force the synchronization, click the <i class="icon-refresh"></i> button in the navigation bar.
 
-## 1. Therac-25 (1985-1987)
-Topping our list is the Therac-25, one of the most infamous case studies in medical device design gone wrong. The Therac-25 was a multi-mode radiation therapy device designed to treat different kinds of cancer. Its software, reused from an older model, contained  bugs that led to the wrong kind of radiation being applied to patients, causing at least 4 deaths and several additional severe radiation burns. The Therac-25 makes our list for two reasons, one technical and one human. 
+> **Note:** The <i class="icon-refresh"></i> button is disabled when you have no document to synchronize.
 
-Technologically, [one of the root causes](https://en.wikipedia.org/wiki/Therac-25#Root_causes)  of the fatalities was a race condition due to concurrent programming errors: the machine needed a specific amount of time to switch modes when an operator entered a command sequence. In the lab, no operator had ever entered the sequence *fast enough* to cause the error. In a perverse twist of fate, it took several months of real life operation before *experienced technicians* could use the console fast enough to cause the problem.  The second reason the Therac-25 became a classic case study is a combination of human frailty and human arrogance.  Because the Therac-25 treated patients already dying of cancer, and because the company had sent out advertisments for the machine claiming it was 5 orders safer than previously working models, [two people died](http://www.ccnr.org/fatal_dose.html) before anyone even *thought* to blame the software. 
-	
-The fallout from the Therac-25 radiation disaster caused the FDA to issue the first laws [requiring hospitals to report errors with medical devices to the FDA and the manufacturer](https://computingcases.org/case_materials/therac/case_history/Case%20History.html) in an effort to close the information loop when something goes wrong. The idea is that even if a dangerous medical device gets on the market, a single failure should tip everyone in the country off to the danger.  We're smarter now, right? Which brings us to....
+#### <i class="icon-refresh"></i> Manage document synchronization
 
+Since one document can be synchronized with multiple locations, you can list and manage synchronized locations by clicking <i class="icon-refresh"></i> **Manage synchronization** in the <i class="icon-refresh"></i> **Synchronize** sub-menu. This will let you remove synchronization locations that are associated to your document.
 
-##2. The Da Vinci Surgical System (2000-present)
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Cmglee_Cambridge_Science_Festival_2015_da_Vinci.jpg/1280px-Cmglee_Cambridge_Science_Festival_2015_da_Vinci.jpg" alt="Fatal Hollywood Robot"  height="200" />
-*The Da Vinci Surgical System, Potentially Fatal Real-World Robot*
+> **Note:** If you delete the file from **Google Drive** or from **Dropbox**, the document will no longer be synchronized with that location.
 
-Surgery robots were linked to [144 deaths between 2000 and 2013](http://arxiv.org/ftp/arxiv/papers/1507/1507.03518.pdf) according to a recent paper. The authors of the study raise a growing concern in the medical world: *Are robots really safer surgeons, or is the human desire for a shiny new toy and a more billable surgery procedure actually making people less safe?* 
+----------
 
-While it is not completely fair to single out Intuitive Surgical's da Vinci system for all of those deaths, the daVinci system is a marketing-juggernaut household name that deserves the singling out. In fact, [medical researchers worry](http://jama.jamanetwork.com/article.aspx?articleid=1700496)  that:  
 
-*"Aggressive direct-to-consumer marketing and incentives associated with fee-for-service payment may promote the use of these advanced treatment technologies."*
+Publication
+-------------
 
-At least [one group of doctors](http://www.acog.org/About-ACOG/News-Room/News-Releases/2013/Statement-on-Robotic-Surgery) is very disappointed in the effects that marketing robots directly to patients could have on their health as well: 
+Once you are happy with your document, you can publish it on different websites directly from StackEdit. As for now, StackEdit can publish on **Blogger**, **Dropbox**, **Gist**, **GitHub**, **Google Drive**, **Tumblr**, **WordPress** and on any SSH server.
 
-*"Aggressive direct-to-consumer marketing of the latest medical technologies may mislead the public into believing that they are the best choice."*
+#### <i class="icon-upload"></i> Publish a document
 
-The expectations set for these robots are that they can perform better than human surgeons, or with less skilled operators behind the controls, and that has not proven conclusively true so far.  While the jury is still out, blanket trust in robot surgeons should not be part of any techno-futurist's arsenal. 
+You can publish your document by opening the <i class="icon-upload"></i> **Publish** sub-menu and by choosing a website. In the dialog box, you can choose the publication format:
 
-##3. The Combine Harvester
-The last 100 years of technological advancement in gigantic farm equipment means that a single farmer now manages 1000 acres of crop land. This is a marvelous technological acheivement, but farming in 2016 is still the [6th most fatal occupation](http://www.bankrate.com/finance/personal-finance/10-most-dangerous-jobs-us-1.aspx) in the civilized US of A thanks largely to long hours around big heavy machinery,  like the ever-dangerous tractor (not yet autonomous enough to make this list) and the combine-harvester. 
+- Markdown, to publish the Markdown text on a website that can interpret it (**GitHub** for instance),
+- HTML, to publish the document converted into HTML (on a blog for example),
+- Template, to have a full control of the output.
 
-<img src="http://westernreservepublicmedia.org/countrycrush/images/cc_gah_3.jpg" alt="Combine Harvester Demolition Derby"  height="200" />
-*An event called the [Country Crush Demolition Derby](http://westernreservepublicmedia.org/countrycrush/index.htm) could only spring from the safest and gentlest of automated machinery, right?  *
+> **Note:** The default template is a simple webpage wrapping your document in HTML format. You can customize it in the **Advanced** tab of the <i class="icon-cog"></i> **Settings** dialog.
 
-While giant spinning blades of death alone aren't enough to name something a killer robot, the combine-harvester makes our list in 2016 because its modern robotic features are part of the continued *cause* of accidents. 
+#### <i class="icon-upload"></i> Update a publication
 
-A 2014 article in [Modern Farmer](http://modernfarmer.com/2014/06/farm-deaths/)  points out that 1000 acres of land per worker means that when an automated blade pulls in the clothing of a farmer, that farmer is alone and far from help when an accident happens.   A machine will also continue operating even if the tired human supervisor falls asleep after long hours, another source of accidents. 
+After publishing, StackEdit will keep your document linked to that publication which makes it easy for you to update it. Once you have modified your document and you want to update your publication, click on the <i class="icon-upload"></i> button in the navigation bar.
 
-The UK government has released a [safety guide](http://www.hse.gov.uk/pubns/ais6.pdf) for working with combine harvesters that notes that injuries often occur by "being pulled into the cutting mechanism" or "being injured by the drive mechanisms or trapped when automatic sensors operate."   
+> **Note:** The <i class="icon-upload"></i> button is disabled when your document has not been published yet.
 
-The safe way to operate or repair a temporary blockage on a combine involves completely shutting the machine down, a process that farmers often do not follow in favor of speeding through a [stressful, time critical](http://nasdonline.org/static_content/documents/1241/d001045.pdf)  phase of farming.   A farmer may make the wrong risk assessment despite manufacturers' warning labels.  The combine harvester is an excellent example of powerful automation that isn't 'human aware'- useful, but still deadly. 
+#### <i class="icon-upload"></i> Manage document publication
 
+Since one document can be published on multiple locations, you can list and manage publish locations by clicking <i class="icon-upload"></i> **Manage publication** in the <i class="icon-provider-stackedit"></i> menu panel. This will let you remove publication locations that are associated to your document.
 
+> **Note:** If the file has been removed from the website or the blog, the document will no longer be published on that location.
 
+----------
 
 
+Markdown Extra
+--------------------
 
+StackEdit supports **Markdown Extra**, which extends **Markdown** syntax with some nice features.
 
+> **Tip:** You can disable any **Markdown Extra** feature in the **Extensions** tab of the <i class="icon-cog"></i> **Settings** dialog.
 
+> **Note:** You can find more information about **Markdown** syntax [here][2] and **Markdown Extra** extension [here][3].
 
 
-##4.
-##5.
-##6.
+### Tables
 
+**Markdown Extra** has a special syntax for tables:
 
+Item     | Value
+-------- | ---
+Computer | $1600
+Phone    | $12
+Pipe     | $1
 
+You can specify column alignment with one or two colons:
 
+| Item     | Value | Qty   |
+| :------- | ----: | :---: |
+| Computer | $1600 |  5    |
+| Phone    | $12   |  12   |
+| Pipe     | $1    |  234  |
 
 
+### Definition Lists
 
+**Markdown Extra** has a special syntax for definition lists too:
 
+Term 1
+Term 2
+:   Definition A
+:   Definition B
 
+Term 3
+
+:   Definition C
+
+:   Definition D
+
+	> part of definition D
+
+
+### Fenced code blocks
+
+GitHub's fenced code blocks are also supported with **Highlight.js** syntax highlighting:
+
+```
+// Foo
+var bar = 0;
+```
+
+> **Tip:** To use **Prettify** instead of **Highlight.js**, just configure the **Markdown Extra** extension in the <i class="icon-cog"></i> **Settings** dialog.
+
+> **Note:** You can find more information:
+
+> - about **Prettify** syntax highlighting [here][5],
+> - about **Highlight.js** syntax highlighting [here][6].
+
+
+### Footnotes
+
+You can create footnotes like this[^footnote].
+
+  [^footnote]: Here is the *text* of the **footnote**.
+
+
+### SmartyPants
+
+SmartyPants converts ASCII punctuation characters into "smart" typographic punctuation HTML entities. For example:
+
+|                  | ASCII                        | HTML              |
+ ----------------- | ---------------------------- | ------------------
+| Single backticks | `'Isn't this fun?'`            | 'Isn't this fun?' |
+| Quotes           | `"Isn't this fun?"`            | "Isn't this fun?" |
+| Dashes           | `-- is en-dash, --- is em-dash` | -- is en-dash, --- is em-dash |
+
+
+### Table of contents
+
+You can insert a table of contents using the marker `[TOC]`:
+
+[TOC]
+
+
+### MathJax
+
+You can render *LaTeX* mathematical expressions using **MathJax**, as on [math.stackexchange.com][1]:
+
+The *Gamma function* satisfying $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$ is via the Euler integral
+
+$$
+\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
+$$
+
+> **Tip:** To make sure mathematical expressions are rendered properly on your website, include **MathJax** into your template:
+
+```
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+```
+
+> **Note:** You can find more information about **LaTeX** mathematical expressions [here][4].
+
+
+### UML diagrams
+
+You can also render sequence diagrams like this:
+
+```sequence
+Alice->Bob: Hello Bob, how are you?
+Note right of Bob: Bob thinks
+Bob-->Alice: I am good thanks!
+```
+
+And flow charts like this:
+
+```flow
+st=>start: Start
+e=>end
+op=>operation: My Operation
+cond=>condition: Yes or No?
+
+st->op->cond
+cond(yes)->e
+cond(no)->op
+```
+
+> **Note:** You can find more information:
+
+> - about **Sequence diagrams** syntax [here][7],
+> - about **Flow charts** syntax [here][8].
+
+### Support StackEdit
+
+[![](https://cdn.monetizejs.com/resources/button-32.png)](https://monetizejs.com/authorize?client_id=ESTHdCYOi18iLhhO&summary=true)
+
+  [^stackedit]: [StackEdit](https://stackedit.io/) is a full-featured, open-source Markdown editor based on PageDown, the Markdown library used by Stack Overflow and the other Stack Exchange sites.
+
+
+  [1]: http://math.stackexchange.com/
+  [2]: http://daringfireball.net/projects/markdown/syntax "Markdown"
+  [3]: https://github.com/jmcmanus/pagedown-extra "Pagedown Extra"
+  [4]: http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference
+  [5]: https://code.google.com/p/google-code-prettify/
+  [6]: http://highlightjs.org/
+  [7]: http://bramp.github.io/js-sequence-diagrams/
+  [8]: http://adrai.github.io/flowchart.js/
