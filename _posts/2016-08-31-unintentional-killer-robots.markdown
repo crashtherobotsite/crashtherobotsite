@@ -69,7 +69,7 @@ The safe way to operate or repair a temporary blockage on a combine involves com
 
 The combine harvester is an excellent example of powerful automation that isn't 'human aware enough'. To operate a combine safely requires several steps of a safety process that slows down work and therefore sometimes is skipped by the tired, overworked, or in-a-hurry farmer.  'Smart' farming equipment, like the previous era's medical devices, will need to step up its game. The lives of future farmers depend on it. 
 
-##4. The Autopilot of Colgan Air Flight 3407 (2009)
+## 4. The Autopilot of Colgan Air Flight 3407 (2009)
 
 
 {% include ext_image.html url="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Continental_Connection_Bombardier_Q400.jpg/1920px-Continental_Connection_Bombardier_Q400.jpg" description="A Bombadier Dash 8 Q400, the same type of plane  that crashed in flight 3407." %}
@@ -86,10 +86,10 @@ Note that nothing on this list reports an autopilot failure.  The autopilot work
 
 {% include ext_image.html url="https://flyawaysimulation.com/images/downloadshots/9991-dhc8-q400-xzip-11-dh8-q400-panel-doc.jpg" description="Illustration of the many cockpit instruments of the Q400 aircraft." %}
 
-This 'surprise' from a functioning autopilot should not have been a surprise at all. [The NTSB linked it to a similar accident in 1994. 
-](http://www.ntsb.gov/investigations/AccidentReports/Reports/AAR1001.pdf#page=91&zoom=auto,72,374)  Recent research indicates that while autopilots don't cause human pilots to lose their physical joystick skills, the autopilots do replace the human pilot's cognitive skills, [like recognizing failures](http://hfs.sagepub.com/content/56/8/1506).    While the intent of autopilots was to allow humans to focus more on these failures and less on routine calculations, it seems that human minds just wander, resulting in potential crashes.  
+This 'surprise' from a functioning autopilot should not have been a surprise at all. [The NTSB linked it to a similar accident in 1994.](http://www.ntsb.gov/investigations/AccidentReports/Reports/AAR1001.pdf#page=91&zoom=auto,72,374)  Recent research indicates that while autopilots don't cause human pilots to lose their physical joystick skills, the autopilots do replace the human pilot's cognitive skills, [like recognizing failures](http://hfs.sagepub.com/content/56/8/1506).    While the intent of autopilots was to allow humans to focus more on these failures and less on routine calculations, it seems that human minds just wander, resulting in potential crashes.  
 
 Like a truck driver falling asleep with the cruise control on,  boredom when supervising an AI autopilot can be fatal. The moral here for future AI is that technology needs to find a way of keeping humans engaged for the tasks it cannot perform itself.  From a safety perspective, partial AI may be as problematic as no AI at all. 
+
 
 
 ## 5. Car-Assembling Robot Arms (1979-Present)
@@ -111,7 +111,10 @@ Complexity, failure to always follow official safety procedures, human boredom, 
 
 A better conclusion is that expecting humans to act like 20th century robots- tireless, precise, always following every step- is a poor use of the art of engineering. While adopting and *actually following* more safety procedures will keep (and has already kept) humans safe, we are now at a technological tipping point. Instead of expecting humans to act more like robots to keep them safe from robots, we should demand and design smarter robots that act more like humans. 
 
+Complexity, failure to always follow official safety procedures, human boredom, and software bugs have all played roles in accidental death due to robot.  Concluding that humans are part of the problem in human-robot fatalities sounds like circular logic. A better conclusion is that expecting humans to act like 20th century robots- tireless, precise, always following every step- is a poor use of the art of engineering. While adopting and *actually following* more safety procedures will keep (and has already kept) humans safe, we are now at a technological tipping point. Instead of expecting humans to act more like robots to keep them safe from robots, we should demand and design smarter robots that act more like humans. 
+
 
 {% include ext_image.html url="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Caught_Coding_%289690512888%29.jpg/1920px-Caught_Coding_%289690512888%29.jpg" 
 description="Baxter, a humanoid manufacturing robot with a torque-controlled arm designed to give way when humans run into it, is an example of a smart, collaborative robot design." %}
+
 
