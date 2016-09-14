@@ -1,4 +1,4 @@
-@@ -0,0 +1,97 @@
+
 ---
 layout: post
 title:  "10 Unintentional Killer Robots"
@@ -87,12 +87,22 @@ This 'surprise' from a functioning autopilot should not have been a surprise at 
 Like a truck driver falling asleep with the cruise control on,  boredom when supervising an AI autopilot can be fatal. The moral here for future AI is that technology needs to find a way of keeping humans engaged for the tasks it cannot perform itself.  From a safety perspective, partial AI may be as problematic as no AI at all. 
 
 
-##5. Car-Building Robot Arm (1979-Present)
-[On January 25, 1979,](https://www.wired.com/2010/01/0125robot-kills-worker/) Robert Williams, a factory line worker at a Ford factory in Flat Rock, Michigan became the the first human to be accidentally killed by a robot.  While safety mechanisms were added to robot arms after each accident.
+##5. Car-Assembling Robot Arms (1979-Present)
 
+[On January 25, 1979,](https://www.wired.com/2010/01/0125robot-kills-worker/) Robert Williams, a factory line worker at a Ford factory in Flat Rock, Michigan became the the first human to be accidentally killed by a robot.  While laws and safety mechanisms are improved and incorporated into the design of robotic arms after each accident, those safety mechanisms still occasionally fail. The year 2015 provided some particularly grisly headlines.  ["Robot grabs man, kills him in German car factory"](https://www.washingtonpost.com/news/morning-mix/wp/2015/07/02/robot-grabs-man-kills-him-in-german-car-factory/) proclaims one article. A tagline an article about a *different* incident read ["The man was reportedly stabbed by a metal arm and electrocuted."](http://www.independent.co.uk/news/world/asia/worker-killed-by-robot-in-welding-accident-at-car-parts-factory-in-india-10453887.html)
 
-It's not a coincidence that the first recorded death by robot occurred in a car factory. 
+It's not a coincidence that the first recorded death by robot occurred in a car factory, or that the accidents continue. Cars are heavy, and made of metal. Robotic arms that lift, weld, bend and shape metal are correspondingly powerful; they pose a greater risk to humans than a robotic sprinkler system. The traditional method of keeping robots and people in separate rooms works only under ideal conditions.  As soon as an arm needs maintenance or repair, a human is sent into the path of a welding robot that is *already misbehaving* and the potential for an accident increases. 
 
+<img src="https://upload.wikimedia.org/wikipedia/en/9/9b/FANUC_6-axis_welding_robots.jpg" height="200" alt="6 axis welding robot." >
+*Six axis welding robot. The stickers warning people not to step near or on it seem obvious, but could be ignored by a service technician. [Image Source](https://en.wikipedia.org/wiki/Industrial_robot#/media/File:FANUC_6-axis_welding_robots.jpg)*
 
+Just like the combine harvester, accidents frequently happen when humans do not stop the robot while trying to fix a problem and do not follow safety instructions.  The death of Ramji Lal, the worker killed by a welding robot in 2015 in an Indian car factory, occurred while Lal was trying to dislodge a piece of stuck material from the robot. A union representative claimed [management failed to make the environment around the robot safe for workers](http://timesofindia.indiatimes.com/india/Terminator-redux-Robot-kills-a-man-at-Haryanas-Manesar-factory/articleshow/48460738.cms), and the police commissioner booked factory management on negligence charges. 
+In the case of the vividly reported German car factory accident, that malfunction that led to the death of a contractor happened while *installing* the robot; [the arm came alive and crushed the contractor](http://www.independent.co.uk/news/world/europe/worker-killed-by-robot-at-volkswagen-car-factory-10359557.html).
 
+##Conclusion
+
+Complexity, failure to always follow official safety procedures, human boredom, and software bugs have all played roles in accidental death due to robot.  Concluding that humans are part of the problem in human-robot fatalities sounds like circular logic. A better conclusion is that expecting humans to act like 20th century robots- tireless, precise, always following every step- is a poor use of the art of engineering. While adopting and *actually following* more safety procedures will keep (and has already kept) humans safe, we are now at a technological tipping point. Instead of expecting humans to act more like robots to keep them safe from robots, we should demand and design smarter robots that act more like humans. 
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Caught_Coding_%289690512888%29.jpg/1920px-Caught_Coding_%289690512888%29.jpg" >*Baxter, A humanoid manufacturing robot with a torque controlled arm designed to give way when humans run into it.
+*. [Image Source](https://en.wikipedia.org/wiki/Baxter_(robot))*
 
