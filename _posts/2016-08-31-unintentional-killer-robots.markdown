@@ -1,3 +1,4 @@
+@@ -0,0 +1,97 @@
 ---
 layout: post
 title:  "10 Unintentional Killer Robots"
@@ -85,14 +86,12 @@ This 'surprise' from a functioning autopilot should not have been a surprise at 
 
 Like a truck driver falling asleep with the cruise control on,  boredom when supervising an AI autopilot can be fatal. The moral here for future AI is that technology needs to find a way of keeping humans engaged for the tasks it cannot perform itself.  From a safety perspective, partial AI may be as problematic as no AI at all. 
 
-##5.
+
+##5. Car-Building Robot Arm (1979-Present)
+[On January 25, 1979,](https://www.wired.com/2010/01/0125robot-kills-worker/) Robert Williams, a factory line worker at a Ford factory in Flat Rock, Michigan became the the first human to be accidentally killed by a robot.  While safety mechanisms were added to robot arms after each accident.
 
 
-
-
-
-
-
+It's not a coincidence that the first recorded death by robot occurred in a car factory. 
 
 
 
