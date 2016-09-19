@@ -10,7 +10,6 @@ published: false
 *TL;DR: We want robots that are fast, smart, and safe.   In 2016, we're closer than ever to achieving that goal. Self-driving cars, package-delivering drones, and robotic vacuum cleaners are all possible because of increased hardware availability, but also because of some particularly smart thinking.  This article covers the historic biggest leaps forward in algorithms for mobile robots. *
 
 
-
 ##1960s:  NASA uses Digital Image Processing for Mars Photos
 One of the most enduring and popular outputs of the robots that NASA sends to space is the beautiful images they send back to the public, but early projects had a problem.  Analog hardware settings for things like exposure time and photographic sensitivity had to be set in advance, and couldn't be easily changed once a vehicle was in space.  Robert Nathan of NASA's Jet Propulsion Laboratory [convinced early mission project leaders](http://history.nasa.gov/computers/Ch9-3.html)  to add Digital Image Processing to the Mariner  and Surveyor programs in the mid-1960s.   
 
@@ -24,9 +23,16 @@ Now imagine this... on the moon.
 
 Once we could map image to image, DIP also expanded the capabilities of *other* types of sensors. If robots can map from camera to camera, then they can map from sonar to camera, or LIDAR to camera, or any other number of sensors.   
 
-##1970s
+##1970s Robots Learn to Walk with the Zero Moment Point
+Any toddler could tell you that learning how to walk is non-trivial. So could any robotics researcher. The earliest robots that could walk at all
+![Conservative walking.](https://upload.wikimedia.org/wikipedia/commons/d/dd/ZMP.GIF)
+
+
 ##1980s
 ##1990s
 ##2000s
 ##2010s
 
+
+## More sources for Robotics History
+http://www.robotshop.com/media/files/PDF/timeline.pdf
