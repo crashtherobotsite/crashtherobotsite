@@ -23,9 +23,21 @@ Now imagine this... on the moon.
 
 Once we could map image to image, DIP also expanded the capabilities of *other* types of sensors. If robots can map from camera to camera, then they can map from sonar to camera, or LIDAR to camera, or any other number of sensors.   
 
-##1970s Robots Learn to Walk with the Zero Moment Point
-Any toddler could tell you that learning how to walk is non-trivial. So could any robotics researcher. The earliest robots that could walk at all
-![Conservative walking.](https://upload.wikimedia.org/wikipedia/commons/d/dd/ZMP.GIF)
+##1970s: Robots Learn to Walk with the Zero Moment Point
+Any toddler could tell you that learning how to walk on two legs is HARD. Robotics researchers agree with the toddlers. The earliest bipedal robots that could walk were programmed to follow this rule: "Always keep your center of gravity somewhere above your base of support."  This rule was easy to program with a few simple calculations about a robot's joints, but it didn't result in robots that walked like humans or any other living biped.  
+
+ Remember the children's game 'Red light, green light'?  For reference,  your center of gravity is in the middle of your torso, pretty close vertically to your belly button. Your base of support is more or less the rectangle on the ground formed by your toes and heels on both feet.  Imagine walking so that if someone yelled "Red light!" at you, your center of gravity was always located somewhere over your feet, with no leaning forward or backwards too far.  You would never *lose* the game because you would never get caught with one foot in the air and fall over.  You would never win the game either, because keeping your belly button over one or both your feet forces you to walk with a slow, shuffle that accurately represents early walking robot motion. 
+ 
+ ![Big feet help too...](https://upload.wikimedia.org/wikipedia/commons/4/47/Nao_Robot_%28Robocup_2016%29.jpg)
+ 
+Enter [Miomir Vukobratović](http://www.pupin.rs/RnDProfile/vukobratovic.html) a Serbian mechanical engineer, and his Zero Moment Point.  In 1968, Dr. Vukobratović presented the first paper explaining an expanded, looser rule for walking robots to follow: "Move so that the physical point (the ZMP) where contact forces caused by friction are exactly balanced out by the inertia and gravity is inside your base of support."  
+
+![The Zero Moment Point](https://upload.wikimedia.org/wikipedia/commons/d/dd/ZMP.GIF)
+
+Once the concept had been articulated, numerous papers were published by others using it to construct their own walking robots.  [This rule is still used in robots today](http://www.cs.cmu.edu/~cga/legs/vukobratovic.pdf) as a metric for how stable a bipedal robot's walk is. The usefulness comes from its simplicity: no matter how many joints or servos we place on a bipedal robot, it still only has 1 or 2 feet in contact with the ground.  Observations that come from follwing the rule include how friction forces limit how fast robots (and humans) can walk safely; if the inertia due to fast motion overpowers the friction forces of the foot (say, because of ice),  the result is a good old Looney Tunes scramble that ends with the walker in a heap. 
+
+![Honda's Asimo, arguably one of the most famous robots using ZMP for walking](https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/ASIMO_4.28.11.jpg/800px-ASIMO_4.28.11.jpg)
+
 
 
 ##1980s
