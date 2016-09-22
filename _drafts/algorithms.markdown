@@ -36,11 +36,16 @@ Enter [Miomir Vukobratović](http://www.pupin.rs/RnDProfile/vukobratovic.html) a
 
 Once the concept had been articulated, numerous papers were published by others using it to construct their own walking robots.  [This rule is still used in robots today](http://www.cs.cmu.edu/~cga/legs/vukobratovic.pdf) as a metric for how stable a bipedal robot's walk is. The usefulness comes from its simplicity: no matter how many joints or servos we place on a bipedal robot, it still only has 1 or 2 feet in contact with the ground.  Observations that come from follwing the rule include how friction forces limit how fast robots (and humans) can walk safely; if the inertia due to fast motion overpowers the friction forces of the foot (say, because of ice),  the result is a good old Looney Tunes scramble that ends with the walker in a heap. 
 
-![Honda's Asimo, arguably one of the most famous robots using ZMP for walking](https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/ASIMO_4.28.11.jpg/800px-ASIMO_4.28.11.jpg)
+![Honda's Asimo, arguably one of the most famous robots that uses the ZMP in it's walking algorithm](https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/ASIMO_4.28.11.jpg/800px-ASIMO_4.28.11.jpg)
 
 
 
-##1980s
+##1980s: Rete Algorithm and Expert Systems Save Lives
+[The failure of 1970s research](https://en.wikipedia.org/wiki/History_of_artificial_intelligence#Boom_1980.E2.80.931987) to produce a "general AI" that could truly think like a human gave rise to a new kind of AI to replace it: "[the expert system.](https://en.wikipedia.org/wiki/Expert_system)"  Instead of trying to develop general principles of thinking,  AI researchers re-evaluated what was necessary to make an AI an expert in a specialized area, or "domain".  The basic idea was to encode huge numbers of rules that described domain knowledge like medicine, business, or even 'common sense' into a database. An AI program then used an 'inference engine' to pull information from the database to answer a question. 
+
+
+  
+
 ##1990s
 ##2000s
 ##2010s
@@ -48,3 +53,4 @@ Once the concept had been articulated, numerous papers were published by others 
 
 ## More sources for Robotics History
 http://www.robotshop.com/media/files/PDF/timeline.pdf
+
