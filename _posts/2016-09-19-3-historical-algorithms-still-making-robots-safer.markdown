@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '3 Historical Landmark Algorithms that Made Robots Safer'
+title: '3 Historical Algorithms Still Making Robots Safer'
 date: '2016-09-19 19:00:00 -0400'
 categories: machine-learning research robotics safety
 author: AMB
