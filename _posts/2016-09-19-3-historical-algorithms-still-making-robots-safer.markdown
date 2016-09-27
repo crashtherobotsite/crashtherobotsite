@@ -1,21 +1,21 @@
 ---
 layout: post
-title: '3 Historical Algorithms Still Making Robots Safer'
+title: '3 Historical Algorithms Still Keeping Humans Safe'
 date: '2016-09-19 19:00:00 -0400'
 categories: machine-learning research robotics safety
 author: AMB
-published: false
+published: true
 ---
 
 *TL;DR: We want robots that are fast, smart, and safe.   In 2016, we're closer than ever to achieving that goal. Self-driving cars, package-delivering drones, and robotic vacuum cleaners are all possible because of increased hardware availability, but also because of some particularly smart thinking.  This article covers 3 of the biggest leaps forward in algorithms for AI and robots from the early years- the 1960s, 70s, and 80s.*
 
 
-##1960s:  NASA uses Digital Image Processing for Mars Photos
+# 1960s:  NASA uses Digital Image Processing for Mars Photos
 One of the most enduring and popular outputs of the robots that NASA sends to space is the beautiful images they send back to the public, but early projects had a problem.  Analog hardware settings for things like exposure time and photographic sensitivity had to be set in advance, and couldn't be easily changed once a vehicle was in space.  Robert Nathan of NASA's Jet Propulsion Laboratory [convinced early mission project leaders](http://history.nasa.gov/computers/Ch9-3.html)  to add Digital Image Processing to the Mariner  and Surveyor programs in the mid-1960s.   
 
 Digital Image Processing is crucial for robotics, and it is so commonplace now that we often don't even recognize it as an engineering achievement.  DIP at its core is 'smart mapping' in a photo- taking a gray image and stretching the colors to the lightest white and the blackest black to allow our eyes to see more information in an image.   DIP is what allows users to fill Pinterest with moody self-portraits,  but it also picks out cancer cells from normal cells in imaging equipment, and lets us see very small differences in temperature or elevation very clearly.   Without the algorithms to change the map of input pixels to output pixels, we would never see stunning images like this: 
 
-{% include ext_image.html url="http://apod.nasa.gov/apod/image/1609/Filaprom_Lawrence_960.jpg" description="Notice how this isn't what YOU see when you stare at the sun? Thank [NASA](http://apod.nasa.gov/apod/astropix.html)" %}
+{% include ext_image.html url="http://apod.nasa.gov/apod/image/1609/Filaprom_Lawrence_960.jpg" description="Notice how this isn't what YOU see when you stare at the sun? Thank NASA." %}
 
 We also wouldn't be able to make our own pictures look better either...
 
@@ -23,10 +23,11 @@ We also wouldn't be able to make our own pictures look better either...
 {% include ext_image.html url="http://lestaylorphoto.com/wp-content/uploads/2015/07/Before-After-1400W%28pp_w768_h256%29.jpg" description="Now imagine this... on the moon." %}
 
 
-Once we could map image to image, DIP also expanded the capabilities of *other* types of sensors. If robots can map from camera to camera, then they can map from sonar to camera, or LIDAR to camera, or any other number of sensors.   
+Once we could map image to image, DIP also expanded the capabilities of *other* types of sensors. If robots can map from camera to camera, then they can map from sonar to camera, or LIDAR to camera, or any other number of sensors.   Digital Image processing now shows up in everything from surgery robots to surveillance cameras. It's still useful after sixty years! 
 
-##1970s: Robots Learn to Walk with the Zero Moment Point
-Any toddler could tell you that learning how to walk on two legs is HARD. Robotics researchers agree with the toddlers. The earliest bipedal robots that could walk were programmed to follow this rule: "Always keep your center of gravity somewhere above your base of support."  This rule was easy to program with a few simple calculations about a robot's joints, but it didn't result in robots that walked like humans or any other living biped.  
+
+# 1970s: Robots Learn to Walk with the Zero Moment Point
+We need humanoid robots to act as our proxies in human environments that have become dangerous. Think nuclear accident sites, biohazard zones, and more. Unfortunately, any toddler could tell you that learning how to walk on two legs is HARD. Robotics researchers agree with the toddlers. The earliest bipedal robots that could walk were programmed to follow this rule: "Always keep your center of gravity somewhere above your base of support."  This rule was easy to program with a few simple calculations about a robot's joints, but it didn't result in robots that walked like humans or any other living biped.  
 
  Remember the children's game 'Red light, green light'?  For reference,  your center of gravity is in the middle of your torso, pretty close vertically to your belly button. Your base of support is more or less the rectangle on the ground formed by your toes and heels on both feet.  Imagine walking so that if someone yelled "Red light!" at you, your center of gravity was always located somewhere over your feet, with no leaning forward or backwards too far.  You would never *lose* the game because you would never get caught with one foot in the air and fall over.  You would never win the game either, because keeping your belly button over one or both your feet forces you to walk with a slow, shuffle that accurately represents early walking robot motion. 
  
@@ -43,7 +44,7 @@ Once the concept had been articulated, numerous papers were published by others 
 {% include ext_image.html url="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/ASIMO_4.28.11.jpg/800px-ASIMO_4.28.11.jpg" description="Honda's Asimo, arguably one of the most famous robots that uses the ZMP in it's walking algorithm" %}
 
 
-##1980s: Rete Algorithm and Expert Systems Save Lives
+# 1980s: Rete Algorithm and Expert Systems Save Lives
 [The failure of 1970s research](https://en.wikipedia.org/wiki/History_of_artificial_intelligence#Boom_1980.E2.80.931987) to produce a general AI that could think like a human gave rise to a new kind of AI to get around the problem: "[the expert system.](https://en.wikipedia.org/wiki/Expert_system)"  Instead of trying to develop *general* principles of thinking,  AI researchers re-evaluated what was necessary to make an AI an expert in a specialized area (also called a "domain").  Even with the slower computers of the 1980s, expert systems succeeded in [producing useful business insights](https://en.wikipedia.org/wiki/Expert_system#History) and [prescribing medication for rare blood diseases as well as human experts](http://www.it.bton.ac.uk/staff/lp22/cs237/cs237medicalxsys.html#MYCIN:%20medical%20diagnosis%20using%20production%20rules), assuring their continued existence in the software world to this day. 
 
 
@@ -72,8 +73,10 @@ The structure of a Rete is meant to take advantage of the fact that while there 
 
 The Rete algorithm has been improved on by its creator, but the basic version has been [implemented in multiple computer languages](http://stackoverflow.com/questions/12474769/how-to-use-rete-algorithm)  and is still in use today.  
 
-##Extras
+# Extras
+
 1. [Jess, the Java Implementation of Rete](http://www.jessrules.com/docs/71/rete.html)
+
 2. [A Timeline of Robotics History](http://www.robotshop.com/media/files/PDF/timeline.pdf)
 
-
+3. [NASA's Digitally Processed Image of the Day](http://apod.nasa.gov/apod/astropix.html)
