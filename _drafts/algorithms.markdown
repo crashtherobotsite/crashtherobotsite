@@ -41,10 +41,18 @@ Once the concept had been articulated, numerous papers were published by others 
 
 
 ##1980s: Rete Algorithm and Expert Systems Save Lives
-[The failure of 1970s research](https://en.wikipedia.org/wiki/History_of_artificial_intelligence#Boom_1980.E2.80.931987) to produce a "general AI" that could truly think like a human gave rise to a new kind of AI to replace it: "[the expert system.](https://en.wikipedia.org/wiki/Expert_system)"  Instead of trying to develop general principles of thinking,  AI researchers re-evaluated what was necessary to make an AI an expert in a specialized area, or "domain".  The basic idea was to encode huge numbers of rules that described domain knowledge like medicine, business, or even 'common sense' into a database. An AI program then used an 'inference engine' to pull information from the database to answer a question. 
+[The failure of 1970s research](https://en.wikipedia.org/wiki/History_of_artificial_intelligence#Boom_1980.E2.80.931987) to produce a "general AI" that could truly think like a human gave rise to a new kind of AI to replace it: "[the expert system.](https://en.wikipedia.org/wiki/Expert_system)"  Instead of trying to develop *general* principles of thinking,  AI researchers re-evaluated what was necessary to make an AI an expert in a specialized area, or "domain".  Even with the less powerful computers of the 1980s, expert systems succeeded in [producing useful business insights](https://en.wikipedia.org/wiki/Expert_system#History) and [prescribing medication for rare blood diseases as well as human experts](http://www.it.bton.ac.uk/staff/lp22/cs237/cs237medicalxsys.html#MYCIN:%20medical%20diagnosis%20using%20production%20rules), assuring their continued existence in the software world to this day. 
 
+The basic idea of an expert system is to encode huge numbers of logical rules that describe domain knowledge like medicine, business, or even 'common sense' into a database. An AI program then uses an 'inference engine' to pull information from the database to answer a question. The speed at which an inference engine can evaluate logical statements is critical to performance and could be very slow: checking every single rule in a database of all medical knowledge would be a very slow way to produce a diagnosis.  Enter the [Rete algorithm](https://en.wikipedia.org/wiki/Rete_algorithm), first published in 1974 by CMU professor Charles Forgy, and still in use in expert systems more than 40 years later. 
 
+![Expert system example](https://ict-patana.wikispaces.com/file/view/2002-9980fig2.gif/32424373/491x273/2002-9980fig2.gif)
+
+'Rete' means 'net' in Latin and 'network' in modern Italian. The Rete algorithm builds a network of 
+
+![](https://upload.wikimedia.org/wikipedia/commons/0/05/Rete.svg)
   
+https://en.wikipedia.org/wiki/Trie
+http://www.sparklinglogic.com/rete-algorithm-demystified-part-1/#
 
 ##1990s
 ##2000s
