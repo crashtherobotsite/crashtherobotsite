@@ -41,18 +41,36 @@ Once the concept had been articulated, numerous papers were published by others 
 
 
 ##1980s: Rete Algorithm and Expert Systems Save Lives
-[The failure of 1970s research](https://en.wikipedia.org/wiki/History_of_artificial_intelligence#Boom_1980.E2.80.931987) to produce a "general AI" that could truly think like a human gave rise to a new kind of AI to replace it: "[the expert system.](https://en.wikipedia.org/wiki/Expert_system)"  Instead of trying to develop *general* principles of thinking,  AI researchers re-evaluated what was necessary to make an AI an expert in a specialized area, or "domain".  Even with the less powerful computers of the 1980s, expert systems succeeded in [producing useful business insights](https://en.wikipedia.org/wiki/Expert_system#History) and [prescribing medication for rare blood diseases as well as human experts](http://www.it.bton.ac.uk/staff/lp22/cs237/cs237medicalxsys.html#MYCIN:%20medical%20diagnosis%20using%20production%20rules), assuring their continued existence in the software world to this day. 
+[The failure of 1970s research](https://en.wikipedia.org/wiki/History_of_artificial_intelligence#Boom_1980.E2.80.931987) to produce a general AI that could think like a human gave rise to a new kind of AI to get around the problem: "[the expert system.](https://en.wikipedia.org/wiki/Expert_system)"  Instead of trying to develop *general* principles of thinking,  AI researchers re-evaluated what was necessary to make an AI an expert in a specialized area (also called a "domain").  Even with the slower computers of the 1980s, expert systems succeeded in [producing useful business insights](https://en.wikipedia.org/wiki/Expert_system#History) and [prescribing medication for rare blood diseases as well as human experts](http://www.it.bton.ac.uk/staff/lp22/cs237/cs237medicalxsys.html#MYCIN:%20medical%20diagnosis%20using%20production%20rules), assuring their continued existence in the software world to this day. 
 
-The basic idea of an expert system is to encode huge numbers of logical rules that describe domain knowledge like medicine, business, or even 'common sense' into a database. An AI program then uses an 'inference engine' to pull information from the database to answer a question. The speed at which an inference engine can evaluate logical statements is critical to performance and could be very slow: checking every single rule in a database of all medical knowledge would be a very slow way to produce a diagnosis.  Enter the [Rete algorithm](https://en.wikipedia.org/wiki/Rete_algorithm), first published in 1974 by CMU professor Charles Forgy, and still in use in expert systems more than 40 years later. 
 
 ![Expert system example](https://ict-patana.wikispaces.com/file/view/2002-9980fig2.gif/32424373/491x273/2002-9980fig2.gif)
 
-'Rete' means 'net' in Latin and 'network' in modern Italian. The Rete algorithm builds a network of 
+The basic idea of an expert system is to encode huge numbers of logical rules that describe domain knowledge like medicine, business, or even 'common sense' into a database. An AI program then uses an 'inference engine' to pull information from the database to answer a question. 
+
+The speed at which an inference engine can evaluate logical statements is critical to performance of the AI.  Initial naive algorithms were very slow because they checked every rule individually, running through a series of "IF-X-THEN-Y" statements that formed a decision tree. For example,  consider these statements: 
+ 1. If the patient is warm, they have a fever. 
+ 2. If the patient is sick, they might die. 
+ 3. If the patient is bleeding, they might die.
+ 4. If the patient has a fever, they are sick. 
+ 
+A human immediately makes the jump from "If the patient is warm, they might die." However, an AI originally would need to run its program *twice*- first to acquire the new information or *inference* that the patient is sick, and then a second time through the rules to get the new information that the patient might die.  While this example seems small, imagine a tree where new information like statement (4) is only gleaned after running many of comparisons, and then forces the whole rule set to be re-computed.  The results become too slow to compute. 
+
+A clever human would try to re-order the rules so that this sort of mishap did not happen often, but that means a designer is responsible for hand-ordering thousands of rules to try and get the order that results in the least extra work for the computer. Sounds rather backwards, doesn't it?  Enter the [Rete algorithm](https://en.wikipedia.org/wiki/Rete_algorithm), first published in 1974 by CMU professor Charles Forgy, and still in use in expert systems more than 40 years later.  
+
+["The brilliant idea that Dr. Charles Forgy developed was to decouple the evaluation of hypothesis from execution sequencing."](http://www.sparklinglogic.com/rete-algorithm-demystified-part-2) 
+
+ 'Rete' means 'net' in Latin, and the Rete algorithm builds a "Rete", a network of nodes in a [trie](https://en.wikipedia.org/wiki/Trie) data structure that keeps track, at each node, of a *single condition* that can be used to satisfy part of a rule.   A rule with a set of conditions to satisfy  is represented as a *path through the network*.  ([Here](http://cis-linux1.temple.edu/~giorgio/cis587/readings/rete.html) are some [examples](http://www.sparklinglogic.com/rete-algorithm-demystified-part-2) of Rete networks with different kinds of rules.)  If the set of true facts matches all the conditions for a rule, then the terminal "Rule node" is reached, and may result in a conclusion or in an inference, an additional fact to send back through the Rete. 
 
 ![](https://upload.wikimedia.org/wikipedia/commons/0/05/Rete.svg)
   
-https://en.wikipedia.org/wiki/Trie
-http://www.sparklinglogic.com/rete-algorithm-demystified-part-1/#
+The structure of a Rete is meant to take advantage of the fact that while there are many, many facts and rules in a system, there are many fewer new facts discovered *while we are running the algorithm*.   Building a Rete means that when new facts are discovered (like the fact that our patient is sick), we don't have to re-evaluate all of the other rules (paths through the Rete). We can run through only the new paths that use our new fact, avoiding unrelated facts and paths, and we do not have to worry about missing other branches that use  our fact.  The downside of building this Rete is memory storage (we have to be able to store all the facts and the mappings to them in memory), which is traded off for better speed. 
+
+The Rete algorithm has been improved on by its creator, but the basic version has been [implemented in multiple computer languages](http://stackoverflow.com/questions/12474769/how-to-use-rete-algorithm)  and is still in use today.  
+
+Extras:
+[Jess, the Java Implementation of Rete](http://www.jessrules.com/docs/71/rete.html)
+
 
 ##1990s
 ##2000s
@@ -61,4 +79,5 @@ http://www.sparklinglogic.com/rete-algorithm-demystified-part-1/#
 
 ## More sources for Robotics History
 http://www.robotshop.com/media/files/PDF/timeline.pdf
+
 
