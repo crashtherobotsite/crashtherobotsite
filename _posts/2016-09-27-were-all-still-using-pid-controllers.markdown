@@ -1,17 +1,17 @@
 ---
 layout: post
-title:  "Give up the Security Blanket! PID Controller Alternatives for Software."
+title:  "The Security Blanket: PID Controller Alternatives in Robotics Software."
 date:   2016-09-27 21:10:58 -0400
 categories: robots control pid control-theory
 author: AMB
 published: false
 ---
-*TL;DR: Despite literally hundreds of alternate proposed control schema for different kinds of robots and machines, most engineers and roboticists are still using the PID controller somewhere in their code, tool-chain, and mobile robots. We discuss the strengths, weaknesses, and alternatives to the vaunted PID controller.*  
+*TL;DR: Despite literally hundreds of alternate proposed control schema for different kinds of robots and machines, most engineers and roboticists are still using the PID controller somewhere in their code, tool-chain, and mobile robots. We discuss the strengths and weaknesses of using PID in software, and finish off with some alternatives to the vaunted PID controller.*
 
 # Background: What Is a PID Controller?
 *Note to EE and controls engineers- feel free to skip this section.*
 
-Let's define some terms.  In the engineering discipline of control theory, a  **controller** is a device or design for altering the output of any physical, electrical or mechanical system. A **process** or **plant** is the piece of the system that can't be changed, only reacted to. Control is an attempt to acheive a specific goal given a pre-existing process.  An example goal of a controller is to hold an output constant even when the input varies, like maintaining a specific temperature in a room even when it's hot or cold outside.  A controller may be implemented physically with hardware, with mechanical dampers, with sofware or even some other way. [[1]](https://en.wikipedia.org/wiki/Controller_(control_theory))  
+Let's define some terms.  In the engineering discipline of control theory, a  **controller** is a device or design for altering the output of any physical, electrical or mechanical system. A **process** or **plant** is the piece of the system that can't be changed, only reacted to. A plant is usually a model of the physical world: a room to be heated, a boat to steer, an ocean pushing on a submarine.  Control is an attempt to acheive a specific goal given a pre-existing plant: a temperature for the room, a heading for the boat, a depth for a submarine.  A controller may need to hold an output constant even when the input varies, like maintaining a specific temperature in a room even when it's hot or cold outside.  A controller may be implemented  with electrical hardware, with mechanical dampers, with sofware or even some other way. [[1]](https://en.wikipedia.org/wiki/Controller_(control_theory))
 
 {% include ext_image.html url="http://www.controlglobal.com/assets/00_images/2012/1205/CG1205-ATE1.jpg" description="A PID controller implemented completely mechanically."}
 
