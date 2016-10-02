@@ -4,6 +4,7 @@ title: '3 Historical Algorithms Still Keeping Humans Safe'
 date: '2016-09-19 19:00:00 -0400'
 categories: machine-learning research robotics safety
 author: AMB
+robots_rating: 3
 published: true
 ---
 
@@ -72,6 +73,10 @@ A clever human would try to re-order the rules so that this sort of mishap did n
 The structure of a Rete is meant to take advantage of the fact that while there are many, many facts and rules in a system, there are many fewer new facts discovered *while we are running the algorithm*.   Building a Rete means that when new facts are discovered (like the fact that our patient is sick), we don't have to re-evaluate all of the other rules (paths through the Rete). We can run through only the new paths that use our new fact, avoiding unrelated facts and paths, and we do not have to worry about missing other branches that use  our fact.  The downside of building this Rete is memory storage (we have to be able to store all the facts and the mappings to them in memory), which is traded off for better speed. 
 
 The Rete algorithm has been improved on by its creator, but the basic version has been [implemented in multiple computer languages](http://stackoverflow.com/questions/12474769/how-to-use-rete-algorithm)  and is still in use today.  
+
+# Conclusion
+
+ The Rete Algorithm, Digital Image Processing, and the Zero Moment Point are famous concepts that have stood the test of time. Each of them contains a truth that extends beyond any one particular coding problem *and* each presents a solution to an economically expensive problem.  Historical robots and AI stood at the intersection of advanced academic knowledge and heavy industry. As a result, roboticists have been constantly challenged with new ways of solving expensive and complicated tasks. Luckily for all the puzzle solvers out there, that doesn't look like it's changing any time soon!
 
 # Extras
 

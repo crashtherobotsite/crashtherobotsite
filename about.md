@@ -22,3 +22,18 @@ We crash robots.
 ## Contact Us ##
 Need a science writer, robotics consultant, or have an idea for a post? Want to submit a post? Contact us at 
 [therobotcrashers@gmail.com](mailto:therobotcrashers@gmail.com).
+
+## The Robot Reading Levels ##
+This is a technical blog, but everyone can love robots! With that in mind:
+
+Robot Reading Level: General
+No mathematics or industry knowledge needed. Pop culture snippets, ethics discussions, and personal opinions about robots.
+
+Robot Reading Level: Tech Savvy
+Contains high school level physics or algebra and basic engineering concepts. Detailed legal discussions using technical definitions may ensue.
+
+Robot Reading Level: Engineer or Maker
+Posts contain source code, the word "Bayesian" in any context, detailed algorithmic descriptions, and other fun stuff appropriate for a Maker, a designer, an engineer, or an adventurous robotics student.
+
+Robot Reading Level: Robotics Academic
+Reviews and responses to content from technical journals or robotics conferences. Warning: Here be thesis dragons!

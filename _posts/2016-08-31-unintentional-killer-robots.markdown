@@ -61,7 +61,7 @@ The last 100 years of technological advancement in gigantic farm equipment means
 
 {% include ext_image.html url="http://westernreservepublicmedia.org/countrycrush/images/cc_gah_3.jpg" description="An event called the Country Crush Demolition Derby can only spring from the safest and gentlest of automated machinery, right?" %}
 
-While giant spinning blades of death on motorized vehical aren't enough to name something a killer robot, the combine-harvester makes our list in 2016 because the modern robotic features that let it harvest and thresh crops are part of the continued *cause* of accidents. 
+While giant spinning blades of death on motorized vehicle aren't enough to name something a killer robot, the combine-harvester makes our list in 2016 because the modern robotic features that let it harvest and thresh crops are part of the continued *cause* of accidents. 
 
 A 2014 article in [Modern Farmer](http://modernfarmer.com/2014/06/farm-deaths/)  points out that 1000 acres of land per worker means that when an automated blade pulls in the clothing of a farmer, the farmer is alone and far from help when an accident happens.   A machine will also continue operating even if the tired human supervisor falls asleep after long hours, another source of accidents. 
 
@@ -112,8 +112,6 @@ In the vividly reported case of the German car factory, that malfunction that le
 Complexity, failure to always follow official safety procedures, human boredom, and software bugs have all played roles in accidental death due to robot.  Concluding that humans are part of the problem in human-robot fatalities sounds like circular logic. 
 
 A better conclusion is that expecting humans to act like 20th century robots- tireless, precise, always following every step- is a poor use of the art of engineering. While adopting and *actually following* more safety procedures will keep (and has already kept) humans safe, we are now at a technological tipping point. Instead of expecting humans to act more like robots to keep them safe from robots, we should demand and design smarter robots that act more like humans. 
-
-Complexity, failure to always follow official safety procedures, human boredom, and software bugs have all played roles in accidental death due to robot.  Concluding that humans are part of the problem in human-robot fatalities sounds like circular logic. A better conclusion is that expecting humans to act like 20th century robots- tireless, precise, always following every step- is a poor use of the art of engineering. While adopting and *actually following* more safety procedures will keep (and has already kept) humans safe, we are now at a technological tipping point. Instead of expecting humans to act more like robots to keep them safe from robots, we should demand and design smarter robots that act more like humans. 
 
 
 {% include ext_image.html url="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Caught_Coding_%289690512888%29.jpg/1920px-Caught_Coding_%289690512888%29.jpg" 
