@@ -4,6 +4,7 @@ title:  "My Laser Printer Should be Cuter"
 date:   2016-07-13 21:10:58 -0400
 categories: toys robots science-fiction roomba irobot
 author: AMB
+robots_rating: 1
 ---
 *"What is a robot? It's hardware as complex as a laser printer that was developed at MIT."* -A cynical engineer. 
 

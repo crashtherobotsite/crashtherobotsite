@@ -4,6 +4,7 @@ title:  "On quantifying risk"
 date:   2016-07-28 15:07:00 -0400
 categories: uncertainty autonomy testing 
 author: WRVB
+robots_rating: 2
 ---
 
 In my co-blogger's last post, she wrote about [fault tree analysis (FTA)][fta].

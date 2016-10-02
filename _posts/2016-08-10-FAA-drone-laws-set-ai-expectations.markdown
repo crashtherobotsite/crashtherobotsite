@@ -5,6 +5,7 @@ date: '2016-08-10 21:10:58 -0400'
 categories: drones robots autonomy testing government-policy faa part-107
 author: AMB
 published: true
+robots_rating: 2
 ---
 
 *TL;DR: The new FAA Part 107 rules spell out the requirements and the test a human must pass to pilot a small drone. The law also allows AI to fly the drone as long as a human pilot maintains supervision. Part 107's rules provide a bar that AI pilots will have to be able to hit before they can be allowed to function with less human supervision. In some cases, AI already comes out on top. In others, the field has a long way to go.*

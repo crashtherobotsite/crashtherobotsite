@@ -9,7 +9,20 @@ layout: default
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y " }} |
+       {% if post.robots_rating == 1 %}
+       Robot Reading Level: General
+       {% endif %}
+       {% if post.robots_rating == 2 %}
+       Robot Reading Level: Tech Savvy
+       {% endif %}
+       {% if post.robots_rating == 3 %}
+       Robot Reading Level: Engineer or Maker
+       {% endif %}
+       {% if post.robots_rating == 4 %}
+       Robot Reading Level: Robotics Academic 
+       {% endif %}
+        </span>
 
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>

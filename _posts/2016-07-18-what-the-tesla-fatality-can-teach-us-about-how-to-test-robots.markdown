@@ -4,6 +4,7 @@ title:  "Using the Tesla Autopilot Fatality to Illustrate Robotic System Safety"
 date:   2016-07-18 21:10:58 -0400
 categories: tesla robots self-driving-cars autonomy testing government-policy
 author: AMB
+robots_rating: 2
 ---
 *TL;DR: We propose interdisciplinary tools and strategies from other industries that could be used to investigate the first fatality while using a semi-autonomous vehicle and prevent future accidents of robotics. These tools include the idea of "Reasonably foreseeable misuse" from the medical device industry, truck side guards endorsed by bicycling safety groups, and FTA tools used in modern risk assessment engineering.*
 
