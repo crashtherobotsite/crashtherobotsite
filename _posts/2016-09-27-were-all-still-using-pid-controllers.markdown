@@ -5,6 +5,7 @@ date:   2016-09-27 21:10:58 -0400
 categories: robots control pid control-theory
 author: AMB
 published: true
+robots_rating: 3
 ---
 *TL;DR: "If all you have is a hammer, everything looks like a nail."  Despite hundreds of alternate proposed control schema for different kinds of robots and machines, most engineers and roboticists are still using the 105-year-old PID controller somewhere in their code, tool-chains, and mobile robots. We explain the strengths and weaknesses of using the analog-based PID in digital software.*
 
