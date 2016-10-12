@@ -32,13 +32,18 @@ A PI controller is often good enough for a steady-state process input: if the ma
 
 # Strengths: Why use PID in Software?
 
-PID controllers that were used mechanically to steer boats 100 years ago had to be implemented with physical components that accomplished the mathematical tasks of integrators, differentiators, and multipliers.  Certain mathematical operations were off the table if they didn't have a way of being physically implemented, or if the mechanical cogs and gears needed weighed too much for their task.  Software today is under no such constraints, but PID controllers live on. Why is this? Besides just the sheer number of legacy tools and software libraries available, the PID controller has numerous advantages for a software engineer.
+PID controllers began as mechanical components that, when chained together, produced good physical control of many systems. Engineers easily analyzed them with pencil and paper and knowledge of basic mechanics. So many engineers used them that software equivalents were created, even though a computer can handle a much more detailed analysis.  Why are they still in use today? Besides just the sheer number of [open source](https://github.com/ivmech/ivPID), [educational](https://www.pdx.edu/nanogroup/sites/www.pdx.edu.nanogroup/files/2013_Arduino%20PID%20Lab_0.pdf), and [professional](https://www.mathworks.com/discovery/pid-control.html) software libraries available, the PID controller has numerous advantages for a software engineer.
 
 **If You Need Simplicity**
+
 The three knobs of a PID loop, result in physical effects that, while not independently tunable from each other, are easily explainable. Three knobs on a controller is a manageable number of parameters that can be tuned by hand or by [well-documented, 80 year old processes](https://en.wikipedia.org/wiki/Ziegler%E2%80%93Nichols_method) for a given robot or actuator. Just find a working Kp, Ki, and Kd, and continue on your way through your design. You do, after all, have a robot army that needs building. 
 
-**If You Have Minimal Code Size and Memory**
-The basic digital PID controller is *very small* in code size and memory. A [basic, discrete-time implementation](https://github.com/ivmech/ivPID/blob/master/PID.py) stores 1 input, 4 scale factors, 3 ongoing values, and takes about 10 lines of code: 
+In addition to a practical setup that means you *don't* have to do [additional design work](http://www.ece.rutgers.edu/~gajic/psfiles/chap9.pdf), PID controllers are also easy to analyze mathematically if you *do* need to perform any kind of frequency analysis. While [such analysis](http://www.academia.edu/7793138/Time_and_Frequency_Response_Analysis_of_PID_Controller) is beyond this article, suffice it to say that Kp, Ki, and Kd are still the only numbers you need to know about your controller.
+
+
+**If You Lack Software Resources**
+
+The basic digital PID controller is *very small* in code size and memory space and *very fast* in implementation speed. A [basic, discrete-time implementation](https://github.com/ivmech/ivPID/blob/master/PID.py) stores 1 input, 4 scale factors, 3 ongoing values, and takes about 10 lines of code: 
 
 ```python
 #State Variables: last_error, error_sum, last_output
@@ -68,6 +73,7 @@ And that's it. A PID controller is small, fast, and cheap in code space, great f
 
 
 **If You Can't Model What You're Controlling... but it's unchanging**
+
 A PID controller is an good choice if the output variable that is under control is not easily modeled, but the system characteristics will not change over time. The numeric theory around PID controllers uses a model of the world as a [linear, time-invariant system](https://en.wikipedia.org/wiki/LTI_system_theory). 
 
 Controller *input* can vary with time, but in a PID world, any other physical parameters that are part of the "plant" are modeled as unchanging. For our self-driving car example, that means that the line markers we're using on the road as input can vary as much as we like, but the mass of the car needs to stay the same. If we can model the car mass as unchanging (or not changing enough to affect our result), then a PID controller will likely be a good choice for our self-driving car.
@@ -76,13 +82,15 @@ Controller *input* can vary with time, but in a PID world, any other physical pa
 # Weaknesses: When You Should NOT Use PID Control
 
 **When Your System is Not Time Invariant**
-PID controllers exist in a [mathematical world](https://en.wikipedia.org/wiki/LTI_system_theory) where the plant of a system is **time invariant**.   The system response *does not change* over time.  If we set our oven to 300 degrees,  the oven had better produce the same amount of heat no matter what time of day we are baking cookies (notice I said nothing about whether the oven is actually at 300 degrees...). 
+
+PID controllers exist in a [mathematical world](https://en.wikipedia.org/wiki/LTI_system_theory) where the plant of a system is **time invariant**.   The system response *does not change* over time.  If you turn on a hot shower, the shower has to produce the same amount of heat no matter what time of day you use it.  If the heat from the shower is time dependent because  your roommate uses up all the hot water at night and your water tank takes time to heat up more, then the model you're using of your controller (faucet) and your plant (shower + water tank) system is *not* time invariant. 
 
 Time Invariance is *almost never actually true* in the physical world, but most systems change slowly enough that using the assumption of constant properties doesn't hurt our controller. For example, electrical elements like resistors, inductors, and capacitors often wear out slowly enough that their physical properties can be modeled as unchanging. However, there are systems where that assumption just [can't be made](https://en.wikipedia.org/wiki/Time-variant_system), and PID controllers fail *hard* in these cases.
 
-Let's say our self-driving car is carrying a massive liquid fuel tank, and that this tank gets used up as we drive. If we modeled our plant physics with the car carrying an empty tank, we would tune our K values to get the best result for our controller. But, if we modeled the car as having a heavy full tank of gas, then we might want *different* K values. We might even have to set our Kp, Ki, and Kd terms at full tank, half tank, and then again at empty, manually. If constant re-tuning is necessary, then more knowledge and design need to be added to the controller for any useful automation to happen. Constant re-tuning to account for changes often makes a PID controller more trouble than it is worth.
+Let's say our example self-driving car is carrying a massive liquid fuel tank, and that this tank gets used up as we drive. If we modeled our plant physics with the car carrying an empty tank, we would tune our K values to get the best result for our controller. But, if we modeled the car as having a heavy full tank of gas, then we might want *different* K values. We might even have to set our Kp, Ki, and Kd terms at full tank, half tank, and then again at empty, manually. If constant re-tuning is necessary, then more knowledge and design need to be added to the controller for any useful automation to happen. Constant re-tuning to account for changes often makes a PID controller more trouble than it is worth.
 
 **When Your System is Not Modeleable as Linear**
+
 In control theory, a  **linear system** satisfies a [mathematical definition](https://en.wikipedia.org/wiki/Linear_system#Definition) with a property that you as a software engineer ignore at your own peril: [superposition](https://en.wikipedia.org/wiki/Superposition_principle).  As MIT's [Larry Hardesty](http://news.mit.edu/2010/explained-linear-0226) explains it:  
 
 > Suppose that, without much effort, you can toss a tennis ball at about 20 miles per hour. Now suppose that you’re riding a bicycle at 10 miles per hour and toss a tennis ball straight ahead. The ball will travel forward at 30 miles per hour. Linearity is, essentially, the idea that combining two inputs — like the velocity of your arm and the velocity of the bike — will yield the sum of their respective outputs — the velocity of the ball.
@@ -91,22 +99,26 @@ In control theory, a  **linear system** satisfies a [mathematical definition](ht
  
 1.  If I turn the steering wheel on the car 90 degrees (x1) , the car wheels turn 5 degrees (output F(x1)). 
 2.  If I later turn the steering wheel on the car -90 degrees (x2), the car wheels turn -5 degrees (output F(x2)). 
-3.  Superposition says that if I turn steering  wheel 0 degrees, then the car wheels will turn 0 degrees as well:  F(90 - 90) = 0 = F(90) + F(-90) 
+3.  Superposition says that if I turn steering wheel 0 degrees, then the car wheels will turn 0 degrees as well:  F(90 - 90) = 0 = F(90) + F(-90) 
 
 This principal matches classical physics well: it certainly makes sense to anyone who has ever tried to steer a car in a straight line. But there is a common software case where this logic fails:  *when your only available outputs and inputs are digital states*.  
 
-The base case sounds silly: you wouldn't make a PID controller flip a light switch on or off.  However, software engineers can get tripped up if they forget that *everything* is digital in software.  Imagine I've hooked a software controller up to a servo using an Arduino. I can command values between 1 and 10 for servo position. I might want the value "5.5" to steer my servo, but I can't command that value. My hardware does not allow it.  This happens all the time.  If I implement a pure PID controller, it will constantly be switching between 5 and 6, and the physical controller will vibrate.  A different kind of controller that deals better with discretization error [might get around this problem](https://learn.sparkfun.com/tutorials/pulse-width-modulation), but a pure PID controller can't solve it.   The lesson for software engineers is to be aware of the control effects of discretization error at every level of your system- not just the part you're responsible for. 
+The base case sounds silly: you wouldn't make a PID controller flip a light switch on or off.  However, software engineers can get tripped up if they forget that *everything* is digital in software.  Imagine I've hooked a software controller up to a servo using an Arduino. I can command values between 1 and 10 for servo position. I might want the value "5.5" to steer my servo, but I can't command that value. My software/hardware interface does not allow it.  This happens *all the time* in simple systems.  If I implement a pure PID controller, it will constantly be switching between 5 and 6, and the physical controller will vibrate.  A different kind of controller that deals better with discretization error [might get around this problem](https://learn.sparkfun.com/tutorials/pulse-width-modulation), but a pure PID controller can't solve it.   The lesson for software engineers is to be aware of the control effects of discretization error at every level of your system- not just the part you're responsible for. 
 
 
 **When You Have Documented System Knowledge**
+
 Better control can often be achieved by using what you know about a plant. If I know that commanding a certain voltage to a servo under a specific load will result in the servo moving to a certain position, I don't have to attach a sensor to the servo for feedback. I don't have to buy a sensor at all!  I can just command the voltage. I could even create a calibration table for different voltages vs position for different servo loads.   This is an example of [feed forward control](https://en.wikipedia.org/wiki/Feed_forward_(control)), because I'm commanding my servo based on information I know about it, not measuring it in real time.  
 
 Feed forward control is commonly used *with* PID control to improve results. Ignoring feed forward control when programming for a specific application is 'leaving money on the table': your specific water tank or robot or electrical component probably comes with a datasheet that could give you a better controller, but if you don't include that information, your results will be less than optimal. 
 
-{% include ext_image.html url="https://en.wikipedia.org/wiki/File:FeedForward.png" description="Feed forward and Feed back control combined in one system." %}
+{% include ext_image.html url="https://upload.wikimedia.org/wikipedia/en/6/6a/FeedForward.png" description="Feed forward and Feed back control combined in one system." %}
 
 
-# Resources
+# Resources For Further Study 
+
+We've covered a large chunk of what a software engineer needs to be aware of when first controlling hardware, and common cases that trip up starting roboticists who learn about controllers from Google searches. You've taken your first step into a larger world. Controls engineering can be a career by itself, but just being aware of some of the 'gotchas' in PID controls will make whatever part of a robot you are programming better, safer, and smoother. Here are some resources for further study into the field:
+
 [Linear vs Nonlinear System Examples](http://www.dspguide.com/ch5/4.htm)
 [PID Control and Feed Forward Control Together](http://www.openservo.com/VelocityControl)
 [Tuning A PID Controller](http://www.controlglobal.com/articles/2012/liptak-tuning-interacting-controllers/)

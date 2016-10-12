@@ -1,0 +1,39 @@
+---
+layout: post
+title:  "Lies My Robot Told Me:  Dangerous Perceptions of AI Tech in 2016"
+date:   2016-10-08 19:18:00 -0400
+categories: ai safety complexity deep-learning machine-learning
+author: AMB
+robots_rating: 2
+---
+
+*TL;DR:  The self-driving,  deep-learning, unmanned, voice-recognizing, IoT-connected smart devices of 2016 promised the moon to consumers and businesses. How smart and safe we think this technology is has a major effect on it's actual safety.  Using the media hype of 2016 as a guide, we review what state of the art AIs and robots can really do in 2016- and why public perception matters.
+
+## Great Expectations? ##
+In today's fast moving world, technology is often premiered and over-hyped before it is ready to use.  Robotics demos in particular are famous for carefully edited videos of seemingly amazing achievements that in real life are... not so amazing.  Apple's popular 2011 ad campaign to promote virtual assistant AI "Siri" was widely mocked once Siri was available for actual use. Siri inspired  [parodies](http://www.huffingtonpost.com/2011/10/25/conan-parodies-siri-commercials_n_1030217.html), and wide derision at the [its failure to understand what it was being asked](http://www.techradar.com/news/software/applications/study-gives-apples-siri-a-d-for-accuracy-1087618).  The acheivements of 2015's DARPA Robotics Challenge were swept aside by [despairing science journalists](http://www.popsci.com/darpa-robotics-challenge-was-bust-why-darpa-needs-try-again) and undercut by [highlight reels of huge robots falling over for no reason](https://www.youtube.com/watch?v=g0TaYhjpOfo).  Marketing hype around robots that fail to live up to a promise is a problem, but the problem usually hits customers in the wallet. 
+
+More worrisome from a physical safety perspective is when people believe an AI or robot *does* work beyond its true capabilities. As the tech we have developed finally begins to do useful, safety-critical work for humans and our society, knowing *and communicating* the limits of advanced technology is more important than ever.  
+
+There are several contributing factors to misunderstanding how safe a robot or AI really is.  Inaccurate marketing, previously mentioned, is one of them. Hollywood and TV also contribute.  The famous "CSI Effect" describes a real phenomenon where jurors who frequently watch crime drama on TV have a [heightened, but inaccurate understanding of how important scientific forensic evidence is for a certain kind of criminal case.](http://www.nij.gov/journals/259/pages/csi-effect.aspx).   A similar expectation of AI technologies might cause consumers to overestimate how 'strong' an AI exists today. 
+
+The increased presence of different kinds of technology in our lives is also a factor. While studying the CSI effect, researchers found a different link:  [the fancier cell phone a potential juror owned, the higher the expectations the juror had of forensic science on a case](http://www.npr.org/2011/02/06/133497696/is-the-csi-effect-influencing-courtrooms).  This makes sense from a point of view that acknowledges the complexity of the today's technology:  the inner workings of a cell phone that remembers my birthday and a DNA test that is never wrong are equally mysterious, but one of them is possible, so why not the other one?
+
+Finally, technocrat celebrities and media hype play a role in how powerful AI is perceived to be- and their fear of the future is influencing everyone else's fear of the present. In mid-2015, the media [exploded](http://www.dailymail.co.uk/sciencetech/article-3165356/Artificial-Intelligence-dangerous-NUCLEAR-WEAPONS-AI-pioneer-warns-smart-computers-doom-mankind.html) with [reports](http://observer.com/2015/08/stephen-hawking-elon-musk-and-bill-gates-warn-about-artificial-intelligence/) from a United Nations convention where leading AI researchers warned of a *future*  danger of AI in weaponry replacing ethical decisions made by humans.  Billionaire technocrat Elon Musk's $10 Million donation to the [Future of Life](http://futureoflife.org/ai-news/) institute played up the drama even further. While the researchers' concerns are [legitimate and clearly articulated](http://futureoflife.org/background/aimyths/), reading the media outtakes makes it sound like AI is *already capable* of rising up and enslave us all. It is not. 
+
+
+## Danger 1: Anthropomorphization ##
+## Danger 2: The Manual is Too Long ##
+## Danger 3: Generalization (or complete lack thereof) ##
+## Danger 4: Cock-up Before Conspiracy ##
+
+
+Perception:
+Reality: 
+Safety Risk: 
+
+
+1. Computer Vision
+	Perception: face recognition generalizes. 
+	Reality: face recognition does not generalize. 
+2. Speech Recognition
+3. Virtual 

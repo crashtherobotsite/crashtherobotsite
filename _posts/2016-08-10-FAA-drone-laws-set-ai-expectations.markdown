@@ -97,13 +97,13 @@ Most AI today still relies on the principle "garbage in, garbage out."  If fog o
 
 **With Great Power comes Great Responsibility**
 
-A final subtle legal area that will require *BIG* advancements in AI research is the set of laws directed at human pilots that require a drone *to comprehend the end effects of its actions*. To take a simple example, the FAA is requiring pilots to [report injury or damages over $500]() caused by a crash to the authorities. We can engineer diagnostics to make an AI report damage *to itself*,  but damage to other objects is different. 
+A final subtle legal area that will require *BIG* advancements in AI research is the set of laws directed at human pilots that require a drone *to comprehend the end effects of its actions*. To take a simple example, the FAA is requiring pilots to [report injury or damages over $500](https://www.faa.gov/uas/report_accident/) caused by a crash to the authorities. We can engineer diagnostics to make an AI report damage *to itself*,  but damage to other objects is different. 
 
-For example, if an drone scratches a mailbox on its latest delivery,  the drone has to be able to understand that *the drone* scratched the mailbox, not the neighbor's dog. A more serious example is the general law requiring a drone to [yield to manned, high-speed aircraft in crowded, legal airspaces](). If a human pilot isn't following rules as precisely as the drone expects, what should it do? Can the drone predict which path the human pilot will follow?
+For example, if an drone scratches a mailbox on its latest delivery,  the drone has to be able to understand that *the drone* scratched the mailbox, not the neighbor's dog. A more serious example is the general law requiring a drone to yield to manned, high-speed aircraft in crowded, legal airspaces. If a human pilot isn't following rules as precisely as the drone expects, what should it do? Can the drone predict which path the human pilot will follow?
 
 Existing AI does not handle new scenarios well. To truly learn from brand new scenarios requires a kind of general strong AI that is the stuff of Hollywood movies at present.  Even a narrowed-down problem, like being able to predict what a human pilot with might do if faced with a robot collision, is a hard enough task on the ground in 2D that self-driving car promoters [have called for driverless-car-only zones](http://www.wsj.com/articles/why-cities-arent-ready-for-the-driverless-car-1461550001). 
 
-The classical chess AI problem of "If I move over here, where will my adversary move?" takes on ever more importance when it has to be computed in real time at 100 miles an hour. While advancements have been made in taking on decision spaces like [the game of Go](), the real world is even more complex, and AI isn't quite ready for it yet.
+The classical chess AI problem of "If I move over here, where will my adversary move?" takes on ever more importance when it has to be computed in real time at 100 miles an hour. While advancements have been made in taking on decision spaces like [the game of Go](http://qz.com/639952/googles-ai-won-the-game-go-by-defying-millennia-of-basic-human-instinct/), the real world is even more complex, and AI isn't quite ready for it yet.
 
 
 ## The Superior: Swarms outmanuever Pilots
