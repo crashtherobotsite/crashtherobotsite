@@ -4,6 +4,7 @@ title:  "Lies My Robot Told Me:  Dangerous Perceptions of AI Tech in 2016"
 date:   2016-10-08 19:18:00 -0400
 categories: ai safety complexity deep-learning machine-learning
 author: AMB
+published: false
 robots_rating: 2
 ---
 

@@ -120,7 +120,10 @@ Feed forward control is commonly used *with* PID control to improve results. Ign
 We've covered a large chunk of what a software engineer needs to be aware of when first controlling hardware, and common cases that trip up starting roboticists who learn about controllers from Google searches. You've taken your first step into a larger world. Controls engineering can be a career by itself, but just being aware of some of the 'gotchas' in PID controls will make whatever part of a robot you are programming better, safer, and smoother. Here are some resources for further study into the field:
 
 [Linear vs Nonlinear System Examples](http://www.dspguide.com/ch5/4.htm)
+
 [PID Control and Feed Forward Control Together](http://www.openservo.com/VelocityControl)
+
 [Tuning A PID Controller](http://www.controlglobal.com/articles/2012/liptak-tuning-interacting-controllers/)
+
 [More on PID Control](http://robotsforroboticists.com/pid-control/)
 
