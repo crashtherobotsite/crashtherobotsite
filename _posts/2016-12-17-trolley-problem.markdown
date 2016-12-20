@@ -21,6 +21,22 @@ The MIT research project site lists more than 2 dozen 'selected media' that wrot
 
 However, this research experiment relies on the acceptance of a fictional premise: that a self-driving car can be programmed with software that takes a moral position on who to save in an emergency.  We run into a problem when the media ignores the fact that this **is patently not possible** with present technology, and the articles written wave away that fact with statements like "In 5 or 10 years cars will do this!". After all, everyone loves a story about [murderous future technology from a giant evil corporation](https://www.youtube.com/watch?v=-fN82upbGPo) - straight from science fiction to real life! 
 
+# Death By Numbers
+
+What with all that media attention, this future ethics problem must represent a real ethics problem today, right? Are the thousands of people dead each year from car crashes the direct result of other people's decisions to run them down to avoid possible death themselves? Well, [hit-and-runs](http://www.iii.org/issue-update/auto-crashes) might be. But the rest are called **accidents** for a reason.  When we break down just how many times a year a future self-driving car will be faced with this kind of awful choice, the results tell an unfortunate story about human drivers, but not definitely not one that matches the kind of media attention received by the Moral Machine. 
+
+The [National Highway Traffic Safety Administration](https://crashstats.nhtsa.dot.gov/#/) collects and summarizes the statistics on all traffic fatalities in the United States. For 2015 (the latest year full data is available), fatalities sit at [1.12 per 100 million vehicle miles travelled](https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/812349) and 35,092 people. The relevant question here is this: how many of those fatal accidents, if faced by a self-driving car could possibly have resulted in a moral dilemma worthy of media attention? 
+
+We can answer this question by removing factors that would not contribute to our hypothetical situation. An easy place to start is with alcohol. Alcohol consumption *by the driver* was a factor in [29% of fatal accidents in 2015.](https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/812357) Let us make the small leap that self-driving cars smart enough to consider moral decisions will eliminate this kind of fatality. We can jump even further and say that in general, for the trolley problem to be relevant, we have to eliminate most kinds of driver (drunk or not) error from the decision making process because the trolley problem is about a **deliberate decision in the face of an 'already' bad situation**, not about **making an error that causes a bad situation**. Which brings us to the following breakdown on car crash causes from an [in-depth 2005 NHTSA study](https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/811059):
+
+**94% of fatal car crashes are caused by driver error.**
+**4% are caused by environment or vehicle failure.**
+**2% are caused by something else.**
+
+In other words, the ethics problem of what to do if something bad **just happens** isn't relevant between 94 to 98% of the time. Somewhere between 0% and 4% of the time (since the self-driving car could conceiveably be better at controlling vehicle or environmental failure gracefully), it doesn't matter what decision the car makes because the car isn't in control- the hailstorm or flood it.  94% of the time, the driver makes a mistake. **They are the cause of the failed trolley**. Only 2 to 6% of car crashes exist in a world where the self-driving car can choose who dies. The other 94% exist in a world where such an amazing self-driving car **should have prevented the accident**. 
+
+The Moral Machine does not provide a setting where the self-driving car has too high of a blood alcohol content. 
+
 # The President Misses the Point
 >"...what are the values that we’re going to embed in the cars? There are gonna be a bunch of choices that you have to make, the classic problem being: If the car is driving, you can swerve to avoid hitting a pedestrian, but then you might hit a wall and kill yourself. It’s a moral decision, and who’s setting up those rules?"
 >-[President Barack Obama in Wired interview, October 2016](https://www.wired.com/2016/10/president-obama-mit-joi-ito-interview/)
@@ -41,6 +57,9 @@ The philosophy problem was introduced as a relevant news topic as if self-drivin
 Focusing widespread media coverage on the Trolley Problem ignores real ethical dilemmas in favor of fantastical ones. At this point in time, informed technologists,  media authors among them, have a responsibility to look at the real issues. Ones that might not have a website with cute illustration.
 
 
+
+# Data Sources 
+[FARS Fatality Data 2015](ftp://ftp.nhtsa.dot.gov/fars/2015/National/)
 
 
 
